@@ -31,3 +31,15 @@
   font-weight: 700;
   letter-spacing: 0.05em;
 }
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .username {
+    font-weight: 500;
+    color: white;
+  }
+}
+

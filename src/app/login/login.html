@@ -1,1 +1,42 @@
-<p>login works!</p>
+<div class="container login-content">
+    <form [formGroup]="loginForm" (submit)="submitLogin()">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName">
+            <mat-error>
+            {{ loginForm.get('firstName')?.hasError('required') ? 'First Name is required' : '' }}
+            {{ loginForm.get('firstName')?.hasError('minlength') ? 'Minimum 2 characters required' : '' }}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName">
+            <mat-error>
+            {{ loginForm.get('lastName')?.hasError('required') ? 'Last Name is required' : '' }}
+            {{ loginForm.get('lastName')?.hasError('minlength') ? 'Minimum 2 characters required' : '' }}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+            <mat-error>
+            {{ loginForm.get('email')?.hasError('required') ? 'Email is required' : '' }}
+            {{ loginForm.get('email')?.hasError('email') ? 'Enter a valid email' : '' }}
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Birthday</mat-label>
+            <input matInput type="date" formControlName="birthday">
+            <mat-error>
+            {{ loginForm.get('birthday')?.hasError('required') ? 'Birthday is required' : '' }}
+            </mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" [disabled]="loginForm.invalid">
+            Login
+        </button>
+    </form>
+</div>

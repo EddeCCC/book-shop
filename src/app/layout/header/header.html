@@ -6,9 +6,14 @@
     </div>
 
     <div class="right-header">
+      @if (isLoggedIn()) {
+        <span class="username">Logged in as {{ username() }}</span>
+        <button mat-raised-button color="accent" (click)="logout()">Logout</button>
+      } @else {
         <button mat-raised-button color="primary" [routerLink]="['/login']">
             Login
         </button>
+      }
     </div>
   </div>
 </div>

@@ -8,7 +8,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatChip, MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { CurrencyPipe } from '@angular/common';
-import { tap } from 'rxjs';
 
 @Component({
   selector: 'app-book-details',

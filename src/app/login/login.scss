@@ -1,0 +1,28 @@
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  padding: 40px 16px;
+  min-height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px; 
+  gap: 16px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+  .submit-btn {
+    align-self: flex-end;
+    padding: 0 24px;
+  }
+}
+
+mat-form-field {
+  width: 100%;
+}
