@@ -11,7 +11,16 @@ import { Book } from '../models/book';
 
 @Component({
   selector: 'app-books',
-  imports: [MatCardModule, MatButtonModule, MatFormField, MatSelect, MatLabel, MatOption, RouterLink, CurrencyPipe],
+  imports: [
+    MatCardModule, 
+    MatButtonModule, 
+    MatFormField, 
+    MatSelect, 
+    MatLabel, 
+    MatOption, 
+    RouterLink, 
+    CurrencyPipe
+  ],
   templateUrl: './books.html',
   styleUrl: './books.scss',
 })
@@ -20,7 +29,7 @@ export class Books {
   private ALL = 'All';
 
   books$ = this.bookService.getBooks();
-  books: Signal<Book[]> = toSignal(this.books$, { initialValue: []});
+  books = toSignal<Book[]>(this.books$, { initialValue: undefined});
 
   allCategories = computed(() => this.getCategories(this.books()));
   selectedCategories = signal<string[]>([this.ALL]);
@@ -28,7 +37,9 @@ export class Books {
   filteredBooks = computed(() => this.getSelectedBooks(this.books(), this.selectedCategories()));
   filteredCount = computed(() => this.filteredBooks().length);
 
-  getCategories(books: Book[]): string[] {
+  getCategories(books: Book[] | undefined): string[] {
+    if(!books) return [];
+
     // Use set to prevent duplicate categories
     const set = new Set<string>();
     books.forEach(book => 
@@ -37,9 +48,10 @@ export class Books {
     return Array.from(set).sort();
   }
 
-  getSelectedBooks(books: Book[], selected: string[]): Book[] {
-    if(selected.includes(this.ALL))
-      return books;
+  getSelectedBooks(books: Book[] | undefined, selected: string[]): Book[] {
+    if(!books) return [];
+
+    if(selected.includes(this.ALL))return books;
 
     return books.filter(book => 
       book.categories.some(category => selected.includes(category))

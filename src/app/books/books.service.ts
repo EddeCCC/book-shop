@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Book } from '../models/book';
 import { map, Observable } from 'rxjs';
@@ -13,16 +13,22 @@ export class BookService {
 
   getBooks(): Observable<Book[]> {
     return this.http.get<any[]>(this.jsonUrl)
-      .pipe(map((data) => {
-          return data
+      .pipe(map((data) => data
             .filter((entry) => this.validateEntry(entry))
             .map((entry) => this.mapToBook(entry))
-        })
+        )
     );
   }
 
-  getBookById(id: number) {
-
+  getBookById(id: number): Observable<Book | undefined> {
+      const params = new HttpParams().set('id', id);
+      return this.http.get<any[]>(this.jsonUrl, {params})
+        .pipe(map((data) => {
+          const book = data[0];
+          if(this.validateEntry(book)) 
+            return this.mapToBook(book);
+          return undefined;
+        }));
   }
 
   private mapToBook(entry: any): Book {
