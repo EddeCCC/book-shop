@@ -1,0 +1,61 @@
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.book-count {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.book-row {
+    padding: 10px;
+}
+
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.book-image {
+    width: 200px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}  
+
+.card-body {
+    display: flex;
+    flex-direction: column;    
+    flex: 1;
+    margin: 10px;
+
+    p {
+        margin: 5px;
+    }
+
+    button {
+        align-self: flex-start;
+        margin-top: 8px;
+    }
+}
+
+.buy-button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    padding-right: 16px;
+}
+
+.buy-button-inner {
+    background-color: var(--color-primary);
+    color: white;
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+    }
+}

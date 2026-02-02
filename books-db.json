@@ -1,5 +1,5 @@
 {
-    "items": [
+    "books": [
         {
             "kind": "books#volume",
             "id": "sdjmEAAAQBAJ",
@@ -426,7 +426,10 @@
             "saleInfo": {
                 "country": "DE",
                 "saleability": "NOT_FOR_SALE",
-                "isEbook": false
+                "isEbook": false,
+                "retailPrice": {
+                    "amount": 4.99
+                }
             },
             "accessInfo": {
                 "country": "DE",

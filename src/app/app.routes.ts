@@ -14,7 +14,7 @@ export const routes: Routes = [
     },
     {
         path: 'books',
-        title: 'Collection',
+        title: 'Book Collection',
         component: Books
     },
     {

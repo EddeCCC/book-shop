@@ -1,1 +1,52 @@
-<p>books works!</p>
+<div class="container books-content">
+    <div class="filter-bar">
+        <mat-form-field appearance="outline" class="category-filter">
+            <mat-label>Categories</mat-label>
+            <mat-select multiple
+                [(value)]="selectedCategories"
+                (selectionChange)="onCategorySelectionChange($event.value)">
+
+                <mat-option value="All">All</mat-option>
+
+                @for (category of allCategories(); track category) {
+                <mat-option [value]="category">
+                    {{ category }}
+                </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <span class="book-count">
+            {{ filteredCount() }} books have been found
+        </span>
+    </div>
+    
+  <div class="book-list">
+    @for (book of filteredBooks(); track book.id) {
+        <div class="book-row">
+            <mat-card appearance="outlined" >
+                <mat-card-header>
+                    <mat-card-title>{{ book.title }}</mat-card-title>
+                    <mat-card-subtitle>{{ book.subtitle }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content class="card-content">
+                    <img class="book-image" src="book.jpg" alt="Book image" />
+                    <div class="card-body">
+                        <p><strong>Category:</strong> {{ book.categories.join(', ') }}</p>
+                        <p><strong>Price:</strong> {{ book.price | currency: 'EUR' }}</p>
+                        <div class="details-button">
+                            <button mat-raised-button color="primary" [routerLink]="['/books', book.id]">
+                                Show Details
+                            </button>
+                        </div>
+                    </div>
+                     <div class="buy-button">
+                        <button mat-raised-button color="accent" class="buy-button-inner" [routerLink]="['/checkout']">
+                            Buy
+                        </button>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    }
+  </div>
+</div>
