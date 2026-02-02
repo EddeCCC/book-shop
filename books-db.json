@@ -1,0 +1,1345 @@
+{
+    "items": [
+        {
+            "kind": "books#volume",
+            "id": "sdjmEAAAQBAJ",
+            "etag": "rMN0EuVxIBY",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/sdjmEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Oscar Wilde: Die Erzählungen",
+                "subtitle": "Eine Reise durch die glänzende Fassade des viktorianischen Englands",
+                "authors": [
+                    "Oscar Wilde"
+                ],
+                "publisher": "Good Press",
+                "publishedDate": "2024-01-15",
+                "description": "In \"Oscar Wilde: Die Erzählungen\" vereint Wilde eine exquisite Sammlung seiner besten Erzählungen, die sowohl durch ihren scharfsinnigen Witz als auch durch ihre tiefgreifende Psychologie bestechen. Durch einen einzigartigen literarischen Stil, der mit reichhaltigen Metaphern und lebhafter Bildsprache spielt, entführt der Autor den Leser in eine Welt voller exquisiter Charaktere und moralischer Dilemmata. Die Erzählungen sind nicht nur ein Spiegel der viktorianischen Gesellschaft, sondern verdeutlichen auch die Spannungen zwischen Ästhetik und Ethik, Liebe und Verlust, Verführung und Verrat, was den Kontext der literarischen Bewegung des Ästhetizismus auf fesselnde Weise reflektiert. Oscar Wilde, geboren 1854 in Dublin, war ein herausragender Schriftsteller, Dramatiker und Poet, dessen Leben durch Kreativität und Skandale geprägt war. Seine Forderung nach künstlerischer Freiheit und die Erörterung von Themen wie Individualität und Moral zeigen sich deutlich in seinen Werken. Wieldes Erlebnisse, darunter seine Zeit im Gefängnis und seine Radikalität, haben sicherlich seinen Blick auf die menschliche Natur und das Schreiben beeinflusst, was sich in der kraftvollen Sprache seiner Erzählungen widerspiegelt. Dieses Buch eignet sich sowohl für Literaturinteressierte als auch für Neulinge, die ein Gespür für Wondes eines der größten literarischen Talente seiner Zeit entwickeln möchten. Die Kombination aus packender Erzählkunst und zeitlosen Themen lädt ein, in die vielschichtigen Welten Wieldes einzutauchen und die Komplexität seiner Charaktere zu entdecken. Ein absolutes Muss für jeden Literaturfreund.",
+                "industryIdentifiers": [
+                    {
+                        "type": "OTHER",
+                        "identifier": "EAN:8596547811428"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 388,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.2.2.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=sdjmEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=sdjmEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=sdjmEAAAQBAJ&printsec=frontcover&dq=Oscar+Wilde&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=sdjmEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=sdjmEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 1.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 1.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=sdjmEAAAQBAJ&rdid=book-sdjmEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 1990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 1990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Oscar_Wilde_Die_Erz%C3%A4hlungen-sample-epub.acsm?id=sdjmEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Oscar_Wilde_Die_Erz%C3%A4hlungen-sample-pdf.acsm?id=sdjmEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=sdjmEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In &quot;Oscar Wilde: Die Erzählungen&quot; vereint Wilde eine exquisite Sammlung seiner besten Erzählungen, die sowohl durch ihren scharfsinnigen Witz als auch durch ihre tiefgreifende Psychologie bestechen."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "FvpqDwAAQBAJ",
+            "etag": "MrSBTvVv2SQ",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/FvpqDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Oscar Wilde: Das Bildnis des Dorian Gray",
+                "authors": [
+                    "Oscar Wilde"
+                ],
+                "publisher": " eClassica",
+                "publishedDate": "2018-08-29",
+                "description": "Oscar Wilde: Das Bildnis des Dorian Gray Für die eBook-Ausgabe neu lektoriert und mit modernisierter Rechtschreibung. Voll verlinkt, mit eBook-Inhaltsverzeichnis und Fußnoten Im Atelier eines Malers wünscht sich der junge und reiche Dorian Gray von ganzem Herzen, er könne seine jugendlich strahlende Schönheit für immer bewahren – und sein Porträt möge statt seiner altern. Und tatsächlich, so geschieht es. Er kann sich nun den hedonistischen Ausschweifungen seines von Endzeitstimmung und Dekadenz geprägten Zeitalters (›Fin de siècle‹; Ende 19. Jhdts.) hingeben, ohne seinen Körper zu beeinträchtigen. Doch wenn er das Bild betrachtet, erkennt er, wie sich darin Spuren von Hochmut und Verschlagenheit einschreiben. Entsetzt von seinem Spiegelbild beginnt Dorian seinen anmaßenden Wunsch zu bedauern und sucht nach einem Ausweg aus einer scheinbar ausweglosen Situation. © Redaktion eClassica, 2018",
+                "readingModes": {
+                    "text": true,
+                    "image": false
+                },
+                "pageCount": 280,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "2.2.2.0.preview.2",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=FvpqDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=FvpqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=FvpqDwAAQBAJ&printsec=frontcover&dq=Oscar+Wilde&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=FvpqDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=FvpqDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 1.27,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 1.27,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=FvpqDwAAQBAJ&rdid=book-FvpqDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 1270000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 1270000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Oscar_Wilde_Das_Bildnis_des_Dorian_Gray-sample-epub.acsm?id=FvpqDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": false
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=FvpqDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Oscar Wilde: Das Bildnis des Dorian Gray Für die eBook-Ausgabe neu lektoriert und mit modernisierter Rechtschreibung."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "LSvmEAAAQBAJ",
+            "etag": "iYTPOXCSsD8",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/LSvmEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Die wichtigsten Werke von Oscar Wilde",
+                "subtitle": "Roman, Erzählungen, Märchen, Aphorismen, Drama, Essays & Briefe",
+                "authors": [
+                    "Oscar Wilde"
+                ],
+                "publisher": "Good Press",
+                "publishedDate": "2023-11-26",
+                "description": "In \"Die wichtigsten Werke von Oscar Wilde\" entfaltet sich ein vielschichtiges literarisches Panorama, das tief in die menschliche Psyche und die gesellschaftlichen Normen des viktorianischen Zeitalters eintaucht. Wilde, bekannt für seinen scharfen Witz und seine eloquente Prosa, vereint in seinen Texten Themen wie Identität, Moral, Liebe und Kunst. Diese Sammlung bietet nicht nur einen Überblick über seine bekanntesten Werke, sondern auch einen Einblick in den sozialkritischen Kontext, der seine Schriftstellerei prägte, und reflektiert die Spannungen zwischen persönlicher Freiheit und gesellschaftlichem Druck. Oscar Wilde (1854-1900) war ein irischer Dramatiker, Poet und Romanautor, dessen Werke auch heute noch für ihre scharfsinnigen Beobachtungen und zeitlose Relevanz geschätzt werden. Seine eigene Lebensgeschichte, gekennzeichnet durch gesellschaftliche Skandale und einen unkonventionellen Lebensstil, spiegelt sich in seinen Geschichten wider, die oft mit einer Mischung aus Tragik und Humor versehen sind. Wilde war ein Vorkämpfer der Ästhetik, und seine Überzeugung, dass das Leben Kunst sein sollte, zeigt sich eindrucksvoll in seinem Schaffen. Dieses Buch ist nicht nur eine Hommage an Wildes literarisches Erbe, sondern eine Einladung an die Leser, sich mit den zeitlosen Fragen und ästhetischen Überlegungen auseinanderzusetzen, die in seinen Werken verborgen sind. Ob alte Hasen oder neue Entdecker seiner Literatur: Dieses Buch bietet jedem Leser die Möglichkeit, in die faszinierende Welt eines der größten Geister der Literaturgeschichte einzutauchen.",
+                "industryIdentifiers": [
+                    {
+                        "type": "OTHER",
+                        "identifier": "EAN:8596547679110"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 985,
+                "printType": "BOOK",
+                "categories": [
+                    "Literary Collections"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.6.6.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=LSvmEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=LSvmEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=LSvmEAAAQBAJ&printsec=frontcover&dq=Oscar+Wilde&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=LSvmEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=LSvmEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 1.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 1.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=LSvmEAAAQBAJ&rdid=book-LSvmEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 1990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 1990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Die_wichtigsten_Werke_von_Oscar_Wilde-sample-epub.acsm?id=LSvmEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Die_wichtigsten_Werke_von_Oscar_Wilde-sample-pdf.acsm?id=LSvmEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=LSvmEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "In &quot;Die wichtigsten Werke von Oscar Wilde&quot; entfaltet sich ein vielschichtiges literarisches Panorama, das tief in die menschliche Psyche und die gesellschaftlichen Normen des viktorianischen Zeitalters eintaucht."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "czTKDwAAQBAJ",
+            "etag": "+rEy+YXkahE",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/czTKDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Oscar Wilde, Gesammelte Werke",
+                "authors": [
+                    "Oscar Wilde"
+                ],
+                "publisher": "Anaconda Verlag",
+                "publishedDate": "2013-07-07",
+                "description": "Oscar Wilde war der wohl schillerndste Kopf unter den Schriftstellern des 19. Jahrhunderts. Von seinen Lesern geliebt wie wegen seines Lebenswandels von vielen verachtet, ging der Dandy einen tragischen Weg vom gefeierten Erfolgsautor zum ausgestoßenen Gefängnisinsassen. Dieser Band vereinigt sein faszinierendes, vielgestaltiges Werk: den Roman Das Bildnis des Dorian Gray, seine besten Geschichten, Märchen und Essays, das Theaterstück Lady Windermeres Fächer und seine Gefängnisschriften wie die Ballade vom Zuchthaus in Reading.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783730690536"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3730690531"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 1332,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.9.10.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=czTKDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=czTKDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=czTKDwAAQBAJ&printsec=frontcover&dq=Oscar+Wilde&hl=&cd=6&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=czTKDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=czTKDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 8.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 8.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=czTKDwAAQBAJ&rdid=book-czTKDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 8990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 8990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Oscar_Wilde_Gesammelte_Werke-sample-epub.acsm?id=czTKDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Oscar_Wilde_Gesammelte_Werke-sample-pdf.acsm?id=czTKDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=czTKDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Oscar Wilde war der wohl schillerndste Kopf unter den Schriftstellern des 19."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "-H2YDwAAQBAJ",
+            "etag": "QJdUz5w58qE",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/-H2YDwAAQBAJ",
+            "volumeInfo": {
+                "title": "De Profundis",
+                "authors": [
+                    "Oscar Wilde"
+                ],
+                "publisher": "BoD – Books on Demand",
+                "publishedDate": "2019-05-15",
+                "description": "„Oscar Wildes berühmter offener Brief an Lord Alfred Bruce, seinen früheren Freund und Geliebten, während dessen Inhaftierung mit Zwangsarbeit in den Strafanstalten Pentonville, Wandsworth und Reading zwischen 1895 und 1897. Dem Familienvater war seine „Unzucht“ mit männlichen Prostituierten zum Verhängnis geworden – Homosexualität und Ehebruch standen im Vereinigten Königreich seiner Zeit unter Strafe.“ Redaktion Gröls-Verlag (Edition Werke der Weltliteratur)",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783966372282"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3966372282"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 94,
+                "printType": "BOOK",
+                "categories": [
+                    "Poetry"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.5.2.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=-H2YDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=-H2YDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=-H2YDwAAQBAJ&printsec=frontcover&dq=Oscar+Wilde&hl=&cd=7&source=gbs_api",
+                "infoLink": "http://books.google.de/books?id=-H2YDwAAQBAJ&dq=Oscar+Wilde&hl=&source=gbs_api",
+                "canonicalVolumeLink": "https://books.google.com/books/about/De_Profundis.html?hl=&id=-H2YDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "NOT_FOR_SALE",
+                "isEbook": false
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/De_Profundis-sample-pdf.acsm?id=-H2YDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=-H2YDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "„Oscar Wildes berühmter offener Brief an Lord Alfred Bruce, seinen früheren Freund und Geliebten, während dessen Inhaftierung mit Zwangsarbeit in den Strafanstalten Pentonville, Wandsworth und Reading zwischen 1895 und 1897."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "YnxoEAAAQBAJ",
+            "etag": "kGvCGtAhUNM",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/YnxoEAAAQBAJ",
+            "volumeInfo": {
+                "title": "Drei Essays",
+                "authors": [
+                    "Oscar Wilde"
+                ],
+                "publisher": "epubli",
+                "publishedDate": "2020-12-13",
+                "description": "Drei Essays des britischen Schriftsteller Oscar Wilde. Im Band enthalten sind ›Der Sozialismus und die Seele des Menschen‹, ›Aus dem Zuchthaus zu Reading‹ und ›Aesthetisches Manifest‹. Wilde war wegen Unzucht zu zwei Jahren Zuchthaus verurteilt worden, von wo er Briefe an seinen Freund Alfred Douglas schrieb, in denen er die unmenschlichen Zustände in der Haft schildert. In ›Die Seele des Menschen unter dem Sozialismus‹ in der Übersetzung von Gustav Landauer beschreibt Wilde die Sozialisierung des Privateigentums als Schritt auf dem Weg des eigentlichen Ziels des Sozialismus, der Verwirklichung des Individualismus. Das ›Aesthetische Manifest‹ ist eine Auseinandersetzung mit den ästhetischen Ansprüchen in der Kunst.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783753133263"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3753133264"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 90,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.6.6.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=YnxoEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=YnxoEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=YnxoEAAAQBAJ&printsec=frontcover&dq=Oscar+Wilde&hl=&cd=10&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=YnxoEAAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=YnxoEAAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 0.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 0.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=YnxoEAAAQBAJ&rdid=book-YnxoEAAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Drei_Essays-sample-epub.acsm?id=YnxoEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Drei_Essays-sample-pdf.acsm?id=YnxoEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=YnxoEAAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Drei Essays des britischen Schriftsteller Oscar Wilde."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "S5DBDwAAQBAJ",
+            "etag": "Zi4B/VduXXk",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/S5DBDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Star Wars",
+                "subtitle": "Der Sammler (Journey to Star Wars: Der Aufstieg Skywalkers)",
+                "authors": [
+                    "Kevin Shinick"
+                ],
+                "publisher": "Panini",
+                "publishedDate": "2019-12-10",
+                "description": "Hier erwartet den Leser ein packendes Abenteuer in den weiten Welten der Galaxis, in der die Protagonisten mit jeder Menge Gefahren und einer gehörigen Portion Nervenkitzel konfrontiert werden. Dieses Buch kombiniert Freude und Hochspannung mit der turbulenten Welt von STAR WARS und beschäftigt sich auch mit den Themen Freundschaft, Gemeinschaft und dem Erwachsenwerden.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783736799158"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3736799152"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 256,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.4.4.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=S5DBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=S5DBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=S5DBDwAAQBAJ&printsec=frontcover&dq=star+wars&hl=&cd=1&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=S5DBDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=S5DBDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 11.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 11.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=S5DBDwAAQBAJ&rdid=book-S5DBDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 11990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 11990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Star_Wars-sample-epub.acsm?id=S5DBDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Star_Wars-sample-pdf.acsm?id=S5DBDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=S5DBDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Dieses Buch kombiniert Freude und Hochspannung mit der turbulenten Welt von STAR WARS und beschäftigt sich auch mit den Themen Freundschaft, Gemeinschaft und dem Erwachsenwerden."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "P38xHQQss1YC",
+            "etag": "qbVlxsmJ49Q",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/P38xHQQss1YC",
+            "volumeInfo": {
+                "title": "Star Wars. Das Erbe der Jedi-Ritter 19. Vereint durch die Macht",
+                "subtitle": "Vereint durch die Macht",
+                "authors": [
+                    "James Luceno"
+                ],
+                "publisher": "Blanvalet Taschenbuch Verlag",
+                "publishedDate": "2012-02-09",
+                "description": "Das spektakuläre Finale von »Das Erbe der Jedi-Ritter«! Der Kampf zwischen den Yuuzhan Vong und der Galaktischen Allianz erreicht seinen Höhepunkt. Während ein Großteil der Jedi-Ritter auf Zonama Sekot festsitzt, planen die Yuuzhan Vong den alles entscheidenden letzten Schlag – und ein Opfer für ihre blutdurstigen Götter. Als Han Solo und Leia sich in einen Einsatz begeben, der die Rückeroberung Coruscants ermöglichen soll, stoßen sie auf einen alten Feind, der nun die Seiten gewechselt hat. Doch ist er wirklich zum Verbündeten geworden? Das Jubiläum des Mega-Kults: 30 Jahre Star Wars – und die Begeisterung ist ungebrochen!",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783641077730"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3641077737"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 631,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "averageRating": 2,
+                "ratingsCount": 1,
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "3.5.6.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=P38xHQQss1YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=P38xHQQss1YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=P38xHQQss1YC&printsec=frontcover&dq=star+wars&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=P38xHQQss1YC&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=P38xHQQss1YC"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 7.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 7.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=P38xHQQss1YC&rdid=book-P38xHQQss1YC&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 7990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 7990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Star_Wars_Das_Erbe_der_Jedi_Ritter_19_Ve-sample-epub.acsm?id=P38xHQQss1YC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Star_Wars_Das_Erbe_der_Jedi_Ritter_19_Ve-sample-pdf.acsm?id=P38xHQQss1YC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=P38xHQQss1YC&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Das spektakuläre Finale von »Das Erbe der Jedi-Ritter«!"
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "gHd4DwAAQBAJ",
+            "etag": "0vFGv8Tk/98",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/gHd4DwAAQBAJ",
+            "volumeInfo": {
+                "title": "The Star Wars: Die Urfassung",
+                "authors": [
+                    "George Lucas",
+                    "Jonathan Rinzler"
+                ],
+                "publisher": "Panini",
+                "publishedDate": "2014-10-10",
+                "description": "Bevor Star Wars, so wie wir es heute kennen, das Licht der Welt erblickte, existierte bereits The Star Wars. Dieser erste Entwurf Georges Lucas Meisterwerkes erscheint nun exklusiv Comic. Star Wars- Fans haben endlich die Möglichkeit, die größte Weltraumsaga aller Zeiten so zu erleben wie sie ursprünglich gedacht war. Die Charaktere, die wir kennen und lieben, sind bereits vorhanden, aber es gibt auch Unterschiede, die das Lesen dieser Story zu einem besonderen Genuss machen.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783957839459"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3957839459"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 226,
+                "printType": "BOOK",
+                "categories": [
+                    "Comics & Graphic Novels"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.3.0.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "comicsContent": true,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=gHd4DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=gHd4DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=gHd4DwAAQBAJ&printsec=frontcover&dq=star+wars&hl=&cd=3&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=gHd4DwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=gHd4DwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 19.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 19.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=gHd4DwAAQBAJ&rdid=book-gHd4DwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 19990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 19990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/The_Star_Wars_Die_Urfassung-sample-pdf.acsm?id=gHd4DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=gHd4DwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Bevor Star Wars, so wie wir es heute kennen, das Licht der Welt erblickte, existierte bereits The Star Wars. Dieser erste Entwurf Georges Lucas Meisterwerkes erscheint nun exklusiv Comic."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "kTGdDwAAQBAJ",
+            "etag": "wCw4B7FeYQ8",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/kTGdDwAAQBAJ",
+            "volumeInfo": {
+                "title": "Star Wars",
+                "subtitle": "Poe Dameron V - Das Erwachen",
+                "authors": [
+                    "Charles Soule"
+                ],
+                "publisher": "Panini",
+                "publishedDate": "2019-06-18",
+                "description": "Der inzwischen 5. Comicband über unser aller liebstes Fliegerass Poe Dameron und sein Schwarzes Geschwader im Kampf gegen die erste Ordnung. Deutsche Erstveröffentlichung!",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783736745582"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3736745583"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 176,
+                "printType": "BOOK",
+                "categories": [
+                    "Comics & Graphic Novels"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": true,
+                    "imageBubbleVersion": "a1b245a06b524d5b_A"
+                },
+                "comicsContent": true,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=kTGdDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=kTGdDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=kTGdDwAAQBAJ&pg=PT151&dq=star+wars&hl=&cd=4&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=kTGdDwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=kTGdDwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 15.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 15.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=kTGdDwAAQBAJ&rdid=book-kTGdDwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 15990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 15990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Star_Wars-sample-pdf.acsm?id=kTGdDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=kTGdDwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "... <b>STAR WARS</b> STORY € 19,99 ISBN 978-3-7416-0312-9 89 ΚΑΝΑΝ - DER LETZTE PADAWAN € 16,99 ISBN 978-3-95798-708-2 100 YODAS GEHEIMER KRIEG € 17 , - ISBN 978-3-7416-0761-5 90 LANDO € 14,99 ISBN 978-3-95798-709-9 101 EINE ALLIANZ AUF ZEIT € 15&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "yNADEQAAQBAJ",
+            "etag": "vrXV3w9szug",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/yNADEQAAQBAJ",
+            "volumeInfo": {
+                "title": "George Lucas: Der lange Weg zu Star Wars",
+                "authors": [
+                    "Laurent Hopman"
+                ],
+                "publisher": "Splitter Verlag",
+                "publishedDate": "2024-05-01",
+                "description": "Das ultimative Making-of zu »Star Wars« als Graphic Novel! Es war einmal vor langer Zeit in einem Land namens Hollywood... George Lucas – rebellischer Newcomer, unbändiger Visionär und ein Hoffnungsträger der Filmindustrie – schickt sich an, die Geschichte des Kinos für immer zu verändern. Gegen jeden Widerstand, trotz höllischer Castings, nicht enden wollender Querelen am Set, geheimer Romanzen und katastrophaler Zerwürfnisse mit dem Studio entsteht am Ende als zeitloses Meisterwerk eine intergalaktische Heldensaga von unschätzbarer popkultureller Relevanz. »George Lucas: Der lange Weg zu Star Wars« ist ein detaillierter Bericht über die intensive, dramatische und zugleich überraschend komische Entstehungsgeschichte von »Star Wars«. Auf Grundlage von Archivmaterial und anderen historischen Quellen entsteht ein unterhaltsamer Sachcomic. Eine minutiös recherchierte Dokumentation und zugleich eine Ode an die Magie der Kindheit und den Wert von Beharrlichkeit.",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783689505301"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3689505305"
+                    }
+                ],
+                "readingModes": {
+                    "text": false,
+                    "image": true
+                },
+                "pageCount": 208,
+                "printType": "BOOK",
+                "categories": [
+                    "Comics & Graphic Novels"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "0.1.1.0.preview.1",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "comicsContent": true,
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=yNADEQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=yNADEQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=yNADEQAAQBAJ&pg=PA195&dq=star+wars&hl=&cd=5&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=yNADEQAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=yNADEQAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 15.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 15.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=yNADEQAAQBAJ&rdid=book-yNADEQAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 15990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 15990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": false
+                },
+                "pdf": {
+                    "isAvailable": true
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=yNADEQAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Laurent Hopman. Chris ○ Heath - Harrison Ford on <b>Star Wars</b> [GQ - 13. September 2017] ◇ Überarbeitung des Drehbuchs von »<b>Star Wars</b>« ○ Pollock1 / Rinzler5 / Ridder7 / Walter Chaw8 / Burns &amp; Becker11 ○ Paul Scanlon - The Force Behind <b>Star Wars</b>&nbsp;..."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "0HdtAgAAQBAJ",
+            "etag": "QR72Jh8kEpI",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/0HdtAgAAQBAJ",
+            "volumeInfo": {
+                "title": "Vergangenheitsschuld",
+                "subtitle": "Beiträge zu einem deutschen Thema",
+                "authors": [
+                    "Bernhard Schlink"
+                ],
+                "publisher": "Diogenes Verlag AG",
+                "publishedDate": "2013-10-23",
+                "description": "Nach »Vergewisserungen« nun ein weiterer Essayband von Bernhard Schlink: Das Thema, das sein literarisches Werk durchzieht, wird hier theoretisch und zugleich anschaulich erörtert. Schuld kann nicht nur einzelne Menschen betreffen, sondern ganze Generationen, nicht nur einzelne Taten, sondern ganze Abschnitte der Geschichte sie kann als Vergangenheitsschuld die Gegenwart belasten. \"",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783257603903"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3257603908"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 146,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": false,
+                "contentVersion": "1.13.11.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=0HdtAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=0HdtAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=0HdtAgAAQBAJ&printsec=frontcover&dq=beinhard+schlink&hl=&cd=2&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=0HdtAgAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=0HdtAgAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 17.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 17.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=0HdtAgAAQBAJ&rdid=book-0HdtAgAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 17990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 17990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Vergangenheitsschuld-sample-epub.acsm?id=0HdtAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Vergangenheitsschuld-sample-pdf.acsm?id=0HdtAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=0HdtAgAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Schuld kann nicht nur einzelne Menschen betreffen, sondern ganze Generationen, nicht nur einzelne Taten, sondern ganze Abschnitte der Geschichte – sie kann als Vergangenheitsschuld die Gegenwart belasten."
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "OXZtAgAAQBAJ",
+            "etag": "yw4q1KNyVXc",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/OXZtAgAAQBAJ",
+            "volumeInfo": {
+                "title": "Das Wochenende",
+                "authors": [
+                    "Bernhard Schlink"
+                ],
+                "publisher": "Diogenes Verlag AG",
+                "publishedDate": "2013-03-26",
+                "description": "Nach 20-jähriger Haft hat ihn der Bundespräsident begnadigt. Zum ersten Wochenende in Freiheit lädt seine Schwester die alten Freunde ein. Für sie ist das Leben weitergegangen. Und für ihn? Was bleibt von der Zeit der Gewalt? Legenden? Bewältigung? Sprachlosigkeit?",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783257603316"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3257603312"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 179,
+                "printType": "BOOK",
+                "categories": [
+                    "Fiction"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.16.13.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=OXZtAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=OXZtAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=OXZtAgAAQBAJ&printsec=frontcover&dq=beinhard+schlink&hl=&cd=3&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=OXZtAgAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=OXZtAgAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 9.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 9.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=OXZtAgAAQBAJ&rdid=book-OXZtAgAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 9990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 9990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Das_Wochenende-sample-epub.acsm?id=OXZtAgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Das_Wochenende-sample-pdf.acsm?id=OXZtAgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=OXZtAgAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Nach 20-jähriger Haft hat ihn der Bundespräsident begnadigt. Zum ersten Wochenende in Freiheit lädt seine Schwester die alten Freunde ein. Für sie ist das Leben weitergegangen. Und für ihn? Was bleibt von der Zeit der Gewalt? Legenden?"
+            }
+        },
+        {
+            "kind": "books#volume",
+            "id": "PDV3DwAAQBAJ",
+            "etag": "pj9iBGldQUg",
+            "selfLink": "https://www.googleapis.com/books/v1/volumes/PDV3DwAAQBAJ",
+            "volumeInfo": {
+                "title": "Der Vorleser von Bernhard Schlink",
+                "subtitle": "Lektüreschlüssel mit Inhaltsangabe, Interpretationen, Prüfungsaufgaben mit Lösungen, Lernglossar – Schlink, Bernhard – Feuchert, Sascha – Hofmann, Lars",
+                "authors": [
+                    "Bernhard Schlink",
+                    "Sascha Feuchert",
+                    "Lars Hofmann"
+                ],
+                "publisher": "Reclam Verlag",
+                "publishedDate": "2017-05-05",
+                "description": "Reclam Lektüreschlüssel XL – hier findest du alle Informationen, um dich zielsicher und schnell vorzubereiten: auf Klausur, Referat, Abitur oder Matura! Differenziert, umfassend, übersichtlich! - Präzise Inhaltsangaben zum Einstieg in den Text - Klare Analysen von Figuren, Aufbau, Sprache und Stil - Zuverlässige Interpretationen mit prägnanten Textbelegen - Informationen zu Autor:innen und historischem Kontext - Hilfreiche Infografiken, Abbildungen und Tabellen - Aktuelle Literatur- und Medientipps - Prüfungsaufgaben mit Lösungshinweisen - Zentrale Begriffe und Definitionen als Lernglossar",
+                "industryIdentifiers": [
+                    {
+                        "type": "ISBN_13",
+                        "identifier": "9783159612461"
+                    },
+                    {
+                        "type": "ISBN_10",
+                        "identifier": "3159612465"
+                    }
+                ],
+                "readingModes": {
+                    "text": true,
+                    "image": true
+                },
+                "pageCount": 99,
+                "printType": "BOOK",
+                "categories": [
+                    "Education"
+                ],
+                "maturityRating": "NOT_MATURE",
+                "allowAnonLogging": true,
+                "contentVersion": "1.7.7.0.preview.3",
+                "panelizationSummary": {
+                    "containsEpubBubbles": false,
+                    "containsImageBubbles": false
+                },
+                "imageLinks": {
+                    "smallThumbnail": "http://books.google.com/books/content?id=PDV3DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                    "thumbnail": "http://books.google.com/books/content?id=PDV3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                },
+                "language": "de",
+                "previewLink": "http://books.google.de/books?id=PDV3DwAAQBAJ&printsec=frontcover&dq=beinhard+schlink&hl=&cd=5&source=gbs_api",
+                "infoLink": "https://play.google.com/store/books/details?id=PDV3DwAAQBAJ&source=gbs_api",
+                "canonicalVolumeLink": "https://play.google.com/store/books/details?id=PDV3DwAAQBAJ"
+            },
+            "saleInfo": {
+                "country": "DE",
+                "saleability": "FOR_SALE",
+                "isEbook": true,
+                "listPrice": {
+                    "amount": 6.99,
+                    "currencyCode": "EUR"
+                },
+                "retailPrice": {
+                    "amount": 6.99,
+                    "currencyCode": "EUR"
+                },
+                "buyLink": "https://play.google.com/store/books/details?id=PDV3DwAAQBAJ&rdid=book-PDV3DwAAQBAJ&rdot=1&source=gbs_api",
+                "offers": [
+                    {
+                        "finskyOfferType": 1,
+                        "listPrice": {
+                            "amountInMicros": 6990000,
+                            "currencyCode": "EUR"
+                        },
+                        "retailPrice": {
+                            "amountInMicros": 6990000,
+                            "currencyCode": "EUR"
+                        },
+                        "giftable": true
+                    }
+                ]
+            },
+            "accessInfo": {
+                "country": "DE",
+                "viewability": "PARTIAL",
+                "embeddable": true,
+                "publicDomain": false,
+                "textToSpeechPermission": "ALLOWED",
+                "epub": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Der_Vorleser_von_Bernhard_Schlink-sample-epub.acsm?id=PDV3DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "pdf": {
+                    "isAvailable": true,
+                    "acsTokenLink": "http://books.google.de/books/download/Der_Vorleser_von_Bernhard_Schlink-sample-pdf.acsm?id=PDV3DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+                },
+                "webReaderLink": "http://play.google.com/books/reader?id=PDV3DwAAQBAJ&hl=&source=gbs_api",
+                "accessViewStatus": "SAMPLE",
+                "quoteSharingAllowed": false
+            },
+            "searchInfo": {
+                "textSnippet": "Reclam Lektüreschlüssel XL – hier findest du alle Informationen, um dich zielsicher und schnell vorzubereiten: auf Klausur, Referat, Abitur oder Matura!"
+            }
+        }
+    ]
+}
