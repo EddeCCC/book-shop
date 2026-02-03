@@ -1,8 +1,36 @@
-<div>
-    @for (order of finishedOrders(); track order.id) {
-        <p> {{ order.id }}</p>
-        <p> {{ order.bookOrder.title }}</p>
-        <p> {{ order.location.address }}</p>
-        <p> {{ order.location.city }}</p>
-    }
+<div class="container orders-content">
+  <h2 class="page-title">My Orders</h2>
+
+  @if (finishedOrders().length === 0) {
+    <mat-card class="empty-state">
+      <mat-card-content>
+        <p>No orders yet</p>
+      </mat-card-content>
+    </mat-card>
+  } @else {
+    <div class="orders-list">
+      @for (order of finishedOrders(); track order.id) {
+        <mat-card class="order-card" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title>Order #{{ order.id }}</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content>
+            <div class="order-row">
+              <span class="label">Book</span>
+              <span>{{ order.bookOrder.title }}</span>
+            </div>
+
+            <div class="order-row">
+              <span class="label">Shipping</span>
+              <span>
+                {{ order.location.address }}<br />
+                {{ order.location.city }}
+              </span>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      }
+    </div>
+  }
 </div>

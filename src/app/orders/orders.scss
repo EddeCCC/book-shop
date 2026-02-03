@@ -1,0 +1,49 @@
+.page-title {
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.orders-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+
+.order-card {
+  border-radius: 12px;
+
+  mat-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  mat-card-subtitle {
+    opacity: 0.7;
+  }
+}
+
+.order-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px;
+  margin-bottom: 8px;
+
+  .label {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.empty-state {
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 24px;
+
+  p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.7;
+  }
+}
