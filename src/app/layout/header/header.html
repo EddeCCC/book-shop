@@ -3,12 +3,15 @@
     <div class="left-header">
       <a [routerLink]="['/']" class="logo">BOOKLY</a>
       <a [routerLink]="['/books']">Book Collection</a>
+      @if (isLoggedIn()) {
+        <a [routerLink]="['/orders']">Orders</a>
+      }
     </div>
 
     <div class="right-header">
       @if (isLoggedIn()) {
         <span class="username">Logged in as {{ username() }}</span>
-        <button mat-raised-button color="accent" (click)="logout()">Logout</button>
+        <button mat-raised-button color="accent" (click)="logout()" [routerLink]="['/']">Logout</button>
       } @else {
         <button mat-raised-button color="primary" [routerLink]="['/login']">
             Login

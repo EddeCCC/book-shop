@@ -11,9 +11,7 @@
   flex-direction: column;
   width: 100%;
   max-width: 400px; 
-  gap: 16px;
   padding: 24px;
-  background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 
@@ -25,4 +23,14 @@
 
 mat-form-field {
   width: 100%;
+  gap: 12px;
+}
+
+mat-error {
+  margin-top: -12px;
+}
+
+.login-button {
+  background-color: var(--color-primary);
+  color: white;
 }

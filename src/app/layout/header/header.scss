@@ -1,6 +1,12 @@
 .app-header {
   background-color: var(--color-primary);
   color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; // ensure header stays over other content
 }
 
 .header-content {

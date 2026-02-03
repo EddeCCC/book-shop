@@ -1,0 +1,64 @@
+.checkout-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 96px 16px 32px;
+  min-height: 100vh;
+}
+
+.checkout-card {
+  width: 100%;
+  max-width: 900px;
+  padding: 16px 24px 32px;
+  border-radius: 16px;
+}
+
+mat-horizontal-stepper {
+  background: transparent;
+}
+
+mat-step {
+  padding-top: 24px;
+}
+
+mat-error {
+  margin-top: -12px;
+}
+
+mat-step form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+mat-form-field {
+  width: 100%;
+  gap: 12px;
+}
+
+mat-step p {
+  margin: 4px 0;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+mat-step strong {
+  font-weight: 600;
+}
+
+.step-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.step-actions button {
+  min-width: 160px;
+}
+
+mat-step h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+

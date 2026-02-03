@@ -1,4 +1,4 @@
-import { Component, computed, inject, Signal, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { BookService } from './books.service';
@@ -8,6 +8,7 @@ import { CurrencyPipe } from '@angular/common';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatOption, MatSelect } from '@angular/material/select';
 import { Book } from '../models/book';
+import { OrderService } from '../orders/order.service';
 
 @Component({
   selector: 'app-books',
@@ -26,9 +27,10 @@ import { Book } from '../models/book';
 })
 export class Books {
   private bookService = inject(BookService);
+  private orderService = inject(OrderService);
   private ALL = 'All';
 
-  books$ = this.bookService.getBooks();
+  private books$ = this.bookService.getBooks();
   books = toSignal<Book[]>(this.books$, { initialValue: undefined});
 
   allCategories = computed(() => this.getCategories(this.books()));
@@ -64,5 +66,9 @@ export class Books {
     } else {
       this.selectedCategories.set(values);
     }
+  }
+
+  onBuy(book: Book) {
+    this.orderService.setBookOrder(book.id, book.title);
   }
 }

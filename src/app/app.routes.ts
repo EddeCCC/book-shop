@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
 import { Books } from './books/books';
-import { BookDetails } from './book-details/book-details';
+import { BookDetails } from './books/book-details/book-details';
 import { Login } from './login/login';
 import { Checkout } from './checkout/checkout';
 import { Orders } from './orders/orders';
@@ -9,7 +9,7 @@ import { Orders } from './orders/orders';
 export const routes: Routes = [
     {
         path: '',
-        title: 'Home Page',
+        title: 'Bookly',
         component: Home
     },
     {

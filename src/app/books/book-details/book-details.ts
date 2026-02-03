@@ -1,13 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { BookService } from '../books/books.service';
+import { BookService } from '../books.service';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { Book } from '../models/book';
+import { Book } from '../../models/book';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChip, MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { CurrencyPipe } from '@angular/common';
+import { OrderService } from '../../orders/order.service';
 
 @Component({
   selector: 'app-book-details',
@@ -26,8 +27,13 @@ import { CurrencyPipe } from '@angular/common';
 export class BookDetails {
   route: ActivatedRoute = inject(ActivatedRoute);
   bookService = inject(BookService);
+  orderService = inject(OrderService);
 
   bookId = this.route.snapshot.params['id'];
 
   book = toSignal<Book | undefined>(this.bookService.getBookById(this.bookId), { initialValue: undefined });
+
+  onBuy() {
+    this.orderService.setBookOrder(this.book()!.id, this.book()!.title);
+  }
 }

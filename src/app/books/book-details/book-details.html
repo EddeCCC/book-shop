@@ -32,7 +32,7 @@
         </mat-card-content>
 
         <mat-card-actions>
-            <button mat-raised-button color="primary" [routerLink]="['/checkout']">
+            <button mat-raised-button color="primary" [routerLink]="['/checkout']" (click)="onBuy()">
                 Buy Now
             </button>
             <button mat-raised-button [routerLink]="['/books']">
@@ -43,7 +43,7 @@
 } @else {
      <mat-card class="error-card">
         <p>Sorry, we could not find any details about this book...</p>
-        <button mat-button color="primary" [routerLink]="['/books']">Back to collection</button>
+        <button mat-button color="primary" class="error-button" [routerLink]="['/books']">Back to collection</button>
     </mat-card>
 }
 

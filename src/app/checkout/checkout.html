@@ -1,1 +1,64 @@
-<p>checkout works!</p>
+<div class="container checkout-content">
+    <mat-card class="checkout-card">
+        <mat-horizontal-stepper linear #stepper>
+            <mat-step label="Login">
+                @if (!isLoggedIn()) {
+                    <app-login [redirectAfterLogin]="false"></app-login>
+                } @else {
+                    <div class="step-actions">
+                        <button mat-raised-button matStepperNext color="accent">
+                            Continue
+                        </button>         
+                    </div>
+                }
+            </mat-step>
+
+             <mat-step [stepControl]="shippingForm" label="Shipping">
+                <form [formGroup]="shippingForm">
+                    <p><strong>Name:</strong> {{ username() }}</p>
+                    <p><strong>Email:</strong> {{ email() }}</p>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Address</mat-label>
+                        <input matInput formControlName="address" />
+                        <mat-error>
+                            {{ shippingForm.get('address')?.hasError('required') ? 'Address is required' : '' }}
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>City</mat-label>
+                        <input matInput formControlName="city" />
+                        <mat-error>
+                            {{ shippingForm.get('city')?.hasError('required') ? 'City is required' : '' }}
+                        </mat-error>
+                    </mat-form-field>
+                </form> 
+
+                <div class="step-actions">
+                    <button mat-raised-button matStepperNext color="primary" [disabled]="shippingForm.invalid" (click)="submitShipping()">
+                        Continue
+                    </button>
+                </div>
+             </mat-step>
+
+             <mat-step label="Summary">
+                <h3>Order Summary</h3>
+                <p><strong>Name:</strong> {{ username() }}</p>
+                <p><strong>Email:</strong> {{ email() }}</p>
+                <p><strong>Book:</strong> {{ bookTitle() }}</p>
+                <p><strong>Shipping to:</strong></p>
+                <p>
+                    {{ shippingForm.value.address }}<br />
+                    {{ shippingForm.value.city }}<br />
+                </p>
+
+                <div class="step-actions">
+                    <button mat-raised-button color="accent" (click)="finishCheckout()" [disabled]="isInvalid()">
+                        Finish Order
+                    </button>
+                </div>
+             </mat-step>
+        </mat-horizontal-stepper>
+    </mat-card>
+</div>

@@ -40,7 +40,11 @@
                         </div>
                     </div>
                      <div class="buy-button">
-                        <button mat-raised-button color="accent" class="buy-button-inner" [routerLink]="['/checkout']">
+                        <button mat-raised-button 
+                            color="accent" 
+                            class="buy-button-inner" 
+                            [routerLink]="['/checkout']"
+                            (click)="onBuy(book)">
                             Buy
                         </button>
                     </div>

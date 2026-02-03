@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { OrderService } from './order.service';
 
 @Component({
   selector: 'app-orders',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './orders.scss',
 })
 export class Orders {
+  private orderService = inject(OrderService);
 
+  finishedOrders = computed(() => this.orderService.orders());
 }
