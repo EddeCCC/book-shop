@@ -9,7 +9,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "book-shop": {
+    "bookly": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -64,10 +64,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "book-shop:build:production"
+              "buildTarget": "bookly:build:production"
             },
             "development": {
-              "buildTarget": "book-shop:build:development"
+              "buildTarget": "bookly:build:development"
             }
           },
           "defaultConfiguration": "development"
