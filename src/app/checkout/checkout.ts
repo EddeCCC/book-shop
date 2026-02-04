@@ -37,6 +37,9 @@ export class Checkout {
   bookTitle = computed(() => this.orderService.currentBookOrder()?.title);
   isInvalid = computed(() => this.isCheckoutInvalid());
 
+  // Check if we need horizontal or vertical stepper
+  isMobile = window.innerWidth <= 768;
+
   shippingForm = this.formBuilder.group({
     address: ['', Validators.required],
     city: ['', Validators.required],

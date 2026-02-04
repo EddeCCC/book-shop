@@ -13,22 +13,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  min-height: 64px;
+  padding: 0 1rem;
 }
 
 .left-header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
 
   a {
-    color: white;
+    color: var(--color-primary-light);
     font-weight: 500;
-    text-decoration: none;
-
-    &.active {
-      text-decoration: underline;
-    }
+    padding: 0.25rem 0;
   }
 }
 
@@ -45,7 +42,32 @@
 
   .username {
     font-weight: 500;
-    color: white;
+    color: var(--color-primary-light);
+  }
+}
+
+.menu-button {
+  display: none;
+  color: var(--color-primary-light);
+}
+
+/**
+  bis 576px  mobile
+  bis 768px -> tablets
+  bis 992px -> small laptops
+  bis 1200px -> large screens
+**/
+@media (max-width: 768px) {
+  .left-header a:not(.logo) {
+    display: none;
+  }
+
+  .right-header .username {
+    display: none;
+  }
+
+  .menu-button { // show only for mobile
+    display: inline-flex;
   }
 }
 

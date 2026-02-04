@@ -9,6 +9,14 @@
     </div>
 
     <div class="right-header">
+      <button
+        mat-icon-button
+        class="menu-button"
+        [matMenuTriggerFor]="mobileMenu"
+        aria-label="Open navigation menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+
       @if (isLoggedIn()) {
         <span class="username">Logged in as {{ username() }}</span>
         <button mat-raised-button color="accent" (click)="logout()" [routerLink]="['/']">Logout</button>
@@ -19,4 +27,13 @@
       }
     </div>
   </div>
+
+  <mat-menu #mobileMenu="matMenu">
+    <a mat-menu-item [routerLink]="['/']">Home</a>
+    <a mat-menu-item [routerLink]="['/books']">Book Collection</a>
+
+    @if (isLoggedIn()) {
+      <a mat-menu-item [routerLink]="['/orders']">Orders</a>
+    } 
+  </mat-menu>
 </div>

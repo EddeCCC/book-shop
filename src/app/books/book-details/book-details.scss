@@ -1,42 +1,39 @@
 .book-detail-card {
   max-width: 800px;
-  margin: 24px auto;
-  padding: 16px;
+  margin: 1.5rem auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: 12px;
 
   .book-content {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: clamp(0.25rem, 1vw, 0.75rem);
 
-    .description {
-      margin-top: 4px;
-    }
-
-    .categories {
-      margin-top: 4px;
-    }
-
+    .description,
+    .categories,
     .authors {
-        margin-top: 4px;
+      margin-top: 4px;
     }
   }
 
   mat-card-actions {
     display: flex;
-    gap: 16px;
-    margin-top: 16px;
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    margin-top: clamp(1rem, 2vw, 1.5rem);
   }
 }
 
 .error-card {
+  width: 90%;
   max-width: 500px;
-  margin: 24px auto;
-  padding: 16px;
+  margin: 2rem auto;
+  padding: clamp(1rem, 3vw, 1.5rem);
   text-align: center;
-  color: red;
+  color: var(--color-error);
 }
 
 .error-button {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-primary-light);
 }
