@@ -3,7 +3,9 @@
         "home": "Start",
         "books": "Buchsammlung",
         "orders": "Bestellungen",
-        "loggedIn": "Angemeldet als"
+        "loggedIn": "Angemeldet als",
+        "login": "Anmelden",
+        "logout": "Abmelden"
     },
     "home": {
         "welcome": "Willkommen auf Bookly",
@@ -36,7 +38,7 @@
         "lastName": "Nachname",
         "email": "E-Mail",
         "birthday": "Geburstag",
-        "login": "Login",
+        "login": "Anmelden",
         "error": {
             "firstName": {
                 "required": "Vorname ist notwendig",

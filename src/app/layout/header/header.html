@@ -27,10 +27,10 @@
 
       @if (isLoggedIn()) {
         <span class="username">{{ 'header.loggedIn' | translate }} {{ username() }}</span>
-        <button mat-raised-button color="accent" (click)="logout()" [routerLink]="['/']">Logout</button>
+        <button mat-raised-button color="accent" (click)="logout()" [routerLink]="['/']">{{ 'header.logout' | translate }}</button>
       } @else {
         <button mat-raised-button color="primary" [routerLink]="['/login']">
-            Login
+            {{ 'header.login' | translate }}
         </button>
       }
     </div>
