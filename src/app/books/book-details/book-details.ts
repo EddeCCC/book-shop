@@ -8,6 +8,7 @@ import { MatChip, MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule, CurrencyPipe } from '@angular/common';
 import { OrderService } from '../../orders/order.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-book-details',
@@ -19,7 +20,8 @@ import { OrderService } from '../../orders/order.service';
     MatIconModule,
     MatChip,
     RouterLink,
-    CurrencyPipe
+    CurrencyPipe,
+    TranslatePipe
   ],
   templateUrl: './book-details.html',
   styleUrl: './book-details.scss',

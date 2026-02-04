@@ -7,18 +7,18 @@
 
         <mat-card-content class="book-content">
             <div class="authors">
-                <strong>Authors:  </strong>
+                <strong>{{ 'book-details.authors' | translate }}:  </strong>
                 @for (author of book.authors; track author) {
                     <mat-chip>{{ author }}</mat-chip>
                 }
             </div>
 
             <div class="published-date">
-                <strong>Published:  </strong> {{ book.publishedDate }}
+                <strong>{{ 'book-details.published' | translate }}:  </strong> {{ book.publishedDate }}
             </div>
 
             <div class="categories">
-                <strong>Categories:  </strong>
+                <strong>{{ 'book-details.categories' | translate }}:  </strong>
                 @for (category of book.categories; track category) {
                    <mat-chip>{{ category }}</mat-chip>
                 }
@@ -27,16 +27,16 @@
             <p class="description">{{ book.description }}</p>
 
             <div class="price">
-                <strong>Price:</strong> {{ book.price | currency: 'EUR' }}
+                <strong>{{ 'book-details.price' | translate }}:</strong> {{ book.price | currency: 'EUR' }}
             </div>
         </mat-card-content>
 
         <mat-card-actions>
             <button mat-raised-button color="primary" [routerLink]="['/checkout']" (click)="onBuy(book)">
-                Buy Now
+                {{ 'book-details.buy' | translate }}
             </button>
             <button mat-raised-button [routerLink]="['/books']">
-                Back to Collection
+                {{ 'book-details.back' | translate }}
             </button>
         </mat-card-actions>
     </mat-card>
@@ -44,7 +44,7 @@
 
 <ng-template #emptyTemplate>
      <mat-card class="error-card">
-        <p>Sorry, we could not find any details about this book...</p>
-        <button mat-button color="primary" class="error-button" [routerLink]="['/books']">Back to collection</button>
+        <p>{{ 'book-details.error' | translate }}</p>
+        <button mat-button color="primary" class="error-button" [routerLink]="['/books']">{{ 'book-details.back' | translate }}</button>
     </mat-card>
 </ng-template>

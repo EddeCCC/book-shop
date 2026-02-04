@@ -1,10 +1,10 @@
 <div class="container home-content">
-  <h1>Welcome on Bookly</h1>
+  <h1>{{ 'home.welcome' | translate }}</h1>
   @if (isLoggedIn()) {
     <h2>{{ username() }}</h2>
   }
 
   <button mat-raised-button color="primary" class ="home-button" [routerLink]="['/books']">
-    Show Books
+    {{ 'home.button' | translate }}
   </button>
 </div>

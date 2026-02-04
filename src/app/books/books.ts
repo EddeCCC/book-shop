@@ -9,6 +9,7 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatOption, MatSelect } from '@angular/material/select';
 import { Book } from '../models/book';
 import { OrderService } from '../orders/order.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-books',
@@ -20,7 +21,8 @@ import { OrderService } from '../orders/order.service';
     MatLabel, 
     MatOption, 
     RouterLink, 
-    CurrencyPipe
+    CurrencyPipe,
+    TranslatePipe
   ],
   templateUrl: './books.html',
   styleUrl: './books.scss',

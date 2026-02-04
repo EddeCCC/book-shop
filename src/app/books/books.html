@@ -1,12 +1,12 @@
 <div class="container books-content">
     <div class="filter-bar">
         <mat-form-field appearance="outline" class="category-filter">
-            <mat-label>Categories</mat-label>
+            <mat-label>{{ 'books.filter.categories' | translate }}</mat-label>
             <mat-select multiple
                 [(value)]="selectedCategories"
                 (selectionChange)="onCategorySelectionChange($event.value)">
 
-                <mat-option value="All">All</mat-option>
+                <mat-option value="All">{{ 'books.filter.all' | translate }}</mat-option>
 
                 @for (category of allCategories(); track category) {
                 <mat-option [value]="category">
@@ -16,7 +16,7 @@
             </mat-select>
         </mat-form-field>
         <span class="book-count">
-            {{ filteredCount() }} books have been found
+            {{ filteredCount() }} {{ 'books.filter.found' | translate }}
         </span>
     </div>
     
@@ -31,11 +31,11 @@
                 <mat-card-content class="card-content">
                     <img class="book-image" src="book.jpg" alt="Book image" />
                     <div class="card-body">
-                        <p><strong>Category:</strong> {{ book.categories.join(', ') }}</p>
-                        <p><strong>Price:</strong> {{ book.price | currency: 'EUR' }}</p>
+                        <p><strong>{{ 'books.card.category' | translate }}:</strong> {{ book.categories.join(', ') }}</p>
+                        <p><strong>{{ 'books.card.price' | translate }}:</strong> {{ book.price | currency: 'EUR' }}</p>
                         <div class="details-button">
                             <button mat-raised-button color="primary" [routerLink]="['/books', book.id]">
-                                Show Details
+                                {{ 'books.card.show' | translate }}
                             </button>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                             class="buy-button-inner" 
                             [routerLink]="['/checkout']"
                             (click)="onBuy(book)">
-                            Buy
+                            {{ 'books.card.buy' | translate }}
                         </button>
                     </div>
                 </mat-card-content>

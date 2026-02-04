@@ -1,4 +1,36 @@
 {
+    "header": {
+        "home": "Start",
+        "books": "Buchsammlung",
+        "orders": "Bestellungen",
+        "loggedIn": "Angemeldet als"
+    },
+    "home": {
+        "welcome": "Willkommen auf Bookly",
+        "button": "Bücher ansehen"
+    },
+    "books": {
+        "filter": {
+            "categories": "Kategorien",
+            "all": "Alle",
+            "found": "Bücher wurden gefunden"
+        },
+        "card": {
+            "category": "Kategorie",
+            "price": "Preis",
+            "show": "Mehr Infos",
+            "buy": "Kaufen"
+        }
+    },
+    "book-details": {
+        "authors": "Autoren",
+        "published": "Veröffentlichung",
+        "categories": "Kategorien",
+        "price": "Preis",
+        "buy": "Jetzt kaufen",
+        "back": "Zurück zur Sammlung",
+        "error": "Leider konnten wir keine Informationen zu diesem Buch finden..."
+    },
     "login": {
         "firstName": "Vorname",
         "lastName": "Nachname",
@@ -19,5 +51,39 @@
                 "format": "Falsches Email Format"
             }
         }
+    },
+    "checkout": {
+        "continue": "Weiter",
+        "login": {
+            "title": "Login"
+        },
+        "shipping": {
+            "title": "Versand",
+            "name": "Name",
+            "email": "E-Mail",
+            "address": "Adresse",
+            "city": "Stadt",
+            "error": {
+                "address": "Addresse ist notwendig",
+                "city": "Stadt ist notwendig"
+            }
+        },
+        "summary": {
+            "title": "Zusammenfassung",
+            "header": "Zusammenfassung",
+            "name": "Name",
+            "email": "E-Mail",
+            "book": "Buch",
+            "price": "Preis",
+            "shipping": "Versand nach",
+            "finish": "Bestellung abschließen"
+        }
+    },
+    "orders": {
+        "title": "Meine Bestellungen",
+        "empty": "Keine Bestellungen gefunden",
+        "order": "Bestellung",
+        "book": "Buch",
+        "shipping": "Versand"
     }
 }

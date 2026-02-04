@@ -4,11 +4,11 @@ import { Router, RouterLink } from '@angular/router';
 import { LoginService } from '../../login/login.service';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, MatButtonModule, MatMenuModule, MatIconModule],
+  imports: [RouterLink, MatButtonModule, MatMenuModule, MatIconModule, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

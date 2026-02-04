@@ -1,4 +1,63 @@
 {
+    "header": {
+        "home": "Home",
+        "books": "Book Collection",
+        "orders": "Orders",
+        "loggedIn": "Logged in as"
+    },
+    "home": {
+        "welcome": "Welcome on Bookly",
+        "button": "Show Books"
+    },
+    "books": {
+        "filter": {
+            "categories": "Categories",
+            "all": "All",
+            "found": "books have been found"
+        },
+        "card": {
+            "category": "Category",
+            "price": "Price",
+            "show": "Show Details",
+            "buy": "Buy"
+        }
+    },
+    "book-details": {
+        "authors": "Authors",
+        "published": "Published",
+        "categories": "Categories",
+        "price": "Price",
+        "buy": "Buy Now",
+        "back": "Back to Collection",
+        "error": "Sorry, we could not find any details about this book..."
+    },
+    "checkout": {
+        "continue": "Continue",
+        "login": {
+            "title": "Login"
+        },
+        "shipping": {
+            "title": "Shipping",
+            "name": "Name",
+            "email": "E-Mail",
+            "address": "Address",
+            "city": "City",
+            "error": {
+                "address": "Address is required",
+                "city": "City is required"
+            }
+        },
+        "summary": {
+            "title": "Summary",
+            "header": "Order Summary",
+            "name": "Name",
+            "email": "E-Mail",
+            "book": "Book",
+            "price": "Price",
+            "shipping": "Shipping to",
+            "finish": "Finish Order"
+        }
+    },
     "login": {
         "firstName": "First Name",
         "lastName": "Last Name",
@@ -19,5 +78,12 @@
                 "format": "Enter a valid email address"
             }
         }
+    },
+    "orders": {
+        "title": "My Orders",
+        "empty": "No order yet",
+        "order": "Order",
+        "book": "Book",
+        "shipping": "Shipping"
     }
 }

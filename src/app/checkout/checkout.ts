@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { OrderService } from '../orders/order.service';
 import { CurrencyPipe } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-checkout',
@@ -21,6 +22,7 @@ import { CurrencyPipe } from '@angular/common';
     MatCardModule,
     ReactiveFormsModule,
     CurrencyPipe,
+    TranslatePipe,
     Login
   ],
   templateUrl: './checkout.html',

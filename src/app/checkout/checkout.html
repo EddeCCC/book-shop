@@ -1,54 +1,54 @@
 <div class="container checkout-content">
     <mat-card class="checkout-card">
         <mat-horizontal-stepper linear [orientation]="isMobile ? 'vertical' : 'horizontal'" #stepper>
-            <mat-step label="Login">
+            <mat-step label="{{ 'checkout.login.title' | translate }}">
                 @if (!isLoggedIn()) {
                     <app-login [redirectAfterLogin]="false" (loginSuccess)="onLoginSuccess()"></app-login>
                 } @else {
                     <div class="step-actions">
                         <button mat-raised-button matStepperNext color="accent">
-                            Continue
+                            {{ 'checkout.continue' | translate }}
                         </button>         
                     </div>
                 }
             </mat-step>
 
-             <mat-step [stepControl]="shippingForm" label="Shipping">
+             <mat-step [stepControl]="shippingForm" label="{{ 'checkout.shipping.title' | translate }}">
                 <form [formGroup]="shippingForm">
-                    <p><strong>Name:</strong> {{ username() }}</p>
-                    <p><strong>Email:</strong> {{ email() }}</p>
+                    <p><strong>{{ 'checkout.shipping.name' | translate }}:</strong> {{ username() }}</p>
+                    <p><strong>{{ 'checkout.shipping.email' | translate }}:</strong> {{ email() }}</p>
 
                     <mat-form-field appearance="outline">
-                        <mat-label>Address</mat-label>
+                        <mat-label>{{ 'checkout.shipping.address' | translate }}</mat-label>
                         <input matInput formControlName="address" />
                         <mat-error>
-                            {{ shippingForm.get('address')?.hasError('required') ? 'Address is required' : '' }}
+                            {{ shippingForm.get('address')?.hasError('required') ? ( 'checkout.shipping.error.address' | translate ) : '' }}
                         </mat-error>
                     </mat-form-field>
 
                     <mat-form-field appearance="outline">
-                        <mat-label>City</mat-label>
+                        <mat-label>{{ 'checkout.shipping.city' | translate }}</mat-label>
                         <input matInput formControlName="city" />
                         <mat-error>
-                            {{ shippingForm.get('city')?.hasError('required') ? 'City is required' : '' }}
+                            {{ shippingForm.get('city')?.hasError('required') ? ( 'checkout.shipping.error.city' | translate ) : '' }}
                         </mat-error>
                     </mat-form-field>
                 </form> 
 
                 <div class="step-actions">
                     <button mat-raised-button matStepperNext color="primary" [disabled]="shippingForm.invalid" (click)="submitShipping()">
-                        Continue
+                        {{ 'checkout.continue' | translate }}
                     </button>
                 </div>
              </mat-step>
 
-             <mat-step label="Summary">
-                <h3>Order Summary</h3>
-                <p><strong>Name:</strong> {{ username() }}</p>
-                <p><strong>Email:</strong> {{ email() }}</p>
-                <p><strong>Book:</strong> {{ bookTitle() }}</p>
-                <p><strong>Price:</strong> {{ bookPrice() | currency: 'EUR' }}</p>
-                <p><strong>Shipping to:</strong></p>
+             <mat-step label="{{ 'checkout.summary.title' | translate }}">
+                <h3>{{ 'checkout.summary.header' | translate }}</h3>
+                <p><strong>{{ 'checkout.summary.name' | translate }}:</strong> {{ username() }}</p>
+                <p><strong>{{ 'checkout.summary.email' | translate }}:</strong> {{ email() }}</p>
+                <p><strong>{{ 'checkout.summary.book' | translate }}:</strong> {{ bookTitle() }}</p>
+                <p><strong>{{ 'checkout.summary.price' | translate }}:</strong> {{ bookPrice() | currency: 'EUR' }}</p>
+                <p><strong>{{ 'checkout.summary.shipping' | translate }}:</strong></p>
                 <p>
                     {{ shippingForm.value.address }}<br />
                     {{ shippingForm.value.city }}<br />
@@ -56,7 +56,7 @@
 
                 <div class="step-actions">
                     <button mat-raised-button color="accent" (click)="finishCheckout()" [disabled]="isInvalid()">
-                        Finish Order
+                        {{ 'checkout.summary.finish' | translate }}
                     </button>
                 </div>
              </mat-step>

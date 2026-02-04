@@ -1,10 +1,10 @@
 <div class="container orders-content">
-  <h2 class="page-title">My Orders</h2>
+  <h2 class="page-title">{{ 'orders.title' | translate }}</h2>
 
   @if (finishedOrders().length === 0) {
     <mat-card class="empty-state">
       <mat-card-content>
-        <p>No orders yet</p>
+        <p>{{ 'orders.empty' | translate }}</p>
       </mat-card-content>
     </mat-card>
   } @else {
@@ -12,17 +12,17 @@
       @for (order of finishedOrders(); track order.id) {
         <mat-card class="order-card" appearance="outlined">
           <mat-card-header>
-            <mat-card-title>Order #{{ order.id }}</mat-card-title>
+            <mat-card-title>{{ 'orders.order' | translate }} #{{ order.id }}</mat-card-title>
           </mat-card-header>
 
           <mat-card-content>
             <div class="order-row">
-              <span class="label">Book</span>
+              <span class="label">{{ 'orders.book' | translate }}</span>
               <span>{{ order.bookOrder.title }}</span>
             </div>
 
             <div class="order-row">
-              <span class="label">Shipping</span>
+              <span class="label">{{ 'orders.shipping' | translate }}</span>
               <span>
                 {{ order.location.address }}<br />
                 {{ order.location.city }}

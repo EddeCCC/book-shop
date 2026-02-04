@@ -2,9 +2,9 @@
   <div class="container header-content">
     <div class="left-header">
       <a [routerLink]="['/']" class="logo">BOOKLY</a>
-      <a [routerLink]="['/books']">Book Collection</a>
+      <a [routerLink]="['/books']">{{ 'header.books' | translate }}</a>
       @if (isLoggedIn()) {
-        <a [routerLink]="['/orders']">Orders</a>
+        <a [routerLink]="['/orders']">{{ 'header.orders' | translate }}</a>
       }
     </div>
 
@@ -26,7 +26,7 @@
       </button>
 
       @if (isLoggedIn()) {
-        <span class="username">Logged in as {{ username() }}</span>
+        <span class="username">{{ 'header.loggedIn' | translate }} {{ username() }}</span>
         <button mat-raised-button color="accent" (click)="logout()" [routerLink]="['/']">Logout</button>
       } @else {
         <button mat-raised-button color="primary" [routerLink]="['/login']">
@@ -46,11 +46,11 @@
   </mat-menu>
 
   <mat-menu #mobileMenu="matMenu">
-    <a mat-menu-item [routerLink]="['/']">Home</a>
-    <a mat-menu-item [routerLink]="['/books']">Book Collection</a>
+    <a mat-menu-item [routerLink]="['/']">{{ 'header.home' | translate }}</a>
+    <a mat-menu-item [routerLink]="['/books']">{{ 'header.books' | translate }}</a>
 
     @if (isLoggedIn()) {
-      <a mat-menu-item [routerLink]="['/orders']">Orders</a>
+      <a mat-menu-item [routerLink]="['/orders']">{{ 'header.orders' | translate }}</a>
     } 
   </mat-menu>
 </div>
