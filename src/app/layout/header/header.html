@@ -11,6 +11,14 @@
     <div class="right-header">
       <button
         mat-icon-button
+        class="language-button"
+        [matMenuTriggerFor]="languageMenu"
+        aria-label="Change language">
+        <mat-icon>language</mat-icon>
+      </button>
+
+      <button
+        mat-icon-button
         class="menu-button"
         [matMenuTriggerFor]="mobileMenu"
         aria-label="Open navigation menu">
@@ -27,6 +35,15 @@
       }
     </div>
   </div>
+
+  <mat-menu #languageMenu="matMenu">
+    <button mat-menu-item (click)="changeLanguage('en')">
+      EN
+    </button>
+    <button mat-menu-item (click)="changeLanguage('de')">
+      DE
+    </button>
+  </mat-menu>
 
   <mat-menu #mobileMenu="matMenu">
     <a mat-menu-item [routerLink]="['/']">Home</a>

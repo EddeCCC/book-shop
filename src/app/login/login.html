@@ -1,39 +1,39 @@
 <div class="container login-content">
     <form [formGroup]="loginForm" (submit)="submitLogin()">
         <mat-form-field appearance="outline">
-            <mat-label>First Name</mat-label>
+            <mat-label>{{ 'login.firstName' | translate }}</mat-label>
             <input matInput formControlName="firstName">
             <mat-error>
-                {{ loginForm.get('firstName')?.hasError('required') ? 'First name is required' : '' }}
-                {{ loginForm.get('firstName')?.hasError('minlength') ? 'Minimum 2 characters required' : '' }}
+                {{ loginForm.get('firstName')?.hasError('required') ? ('login.error.firstName.required' | translate) : '' }}
+                {{ loginForm.get('firstName')?.hasError('minlength') ? ('login.error.firstName.minLength' | translate) : '' }}
             </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-            <mat-label>Last Name</mat-label>
+            <mat-label>{{ 'login.lastName' | translate }}</mat-label>
             <input matInput formControlName="lastName">
             <mat-error>
-                {{ loginForm.get('lastName')?.hasError('required') ? 'Last name is required' : '' }}
-                {{ loginForm.get('lastName')?.hasError('minlength') ? 'Minimum 2 characters required' : '' }}
+                {{ loginForm.get('lastName')?.hasError('required') ? ('login.error.lastName.required' | translate) : '' }}
+                {{ loginForm.get('lastName')?.hasError('minlength') ? ('login.error.lastName.minLength' | translate) : '' }}
             </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-            <mat-label>Email</mat-label>
+            <mat-label>{{ 'login.email' | translate }}</mat-label>
             <input matInput formControlName="email">
             <mat-error>
-                {{ loginForm.get('email')?.hasError('required') ? 'Email is required' : '' }}
-                {{ loginForm.get('email')?.hasError('email') ? 'Enter a valid email' : '' }}
+                {{ loginForm.get('email')?.hasError('required') ? ('login.error.email.required' | translate) : '' }}
+                {{ loginForm.get('email')?.hasError('email') ? ('login.error.email.format' | translate) : '' }}
             </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-            <mat-label>Birthday</mat-label>
+            <mat-label>{{ 'login.birthday' | translate }}</mat-label>
             <input matInput type="date" formControlName="birthday">
         </mat-form-field>
 
         <button mat-raised-button color="primary" [disabled]="loginForm.invalid" class="login-button">
-            Login
+            {{ 'login.login' | translate }}
         </button>
     </form>
 </div>

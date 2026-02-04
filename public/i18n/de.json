@@ -1,0 +1,23 @@
+{
+    "login": {
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "email": "E-Mail",
+        "birthday": "Geburstag",
+        "login": "Login",
+        "error": {
+            "firstName": {
+                "required": "Vorname ist notwendig",
+                "minLength": "Mindestens 2 Buchstaben benötigt"
+            },
+            "lastName": {
+                "required": "Nachname ist notwendig",
+                "minLength": "Mindestens 2 Buchstaben benötigt"
+            },
+            "email": {
+                "required": "E-Mail ist notwendig",
+                "format": "Falsches Email Format"
+            }
+        }
+    }
+}

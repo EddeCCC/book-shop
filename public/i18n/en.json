@@ -1,0 +1,23 @@
+{
+    "login": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "E-Mail",
+        "birthday": "Birthday",
+        "login": "Login",
+        "error": {
+            "firstName": {
+                "required": "First name is required",
+                "minLength": "Minimum 2 characters required"
+            },
+            "lastName": {
+                "required": "Last name is required",
+                "minLength": "Minimum 2 characters required"
+            },
+            "email": {
+                "required": "Email is required",
+                "format": "Enter a valid email address"
+            }
+        }
+    }
+}
