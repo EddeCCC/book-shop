@@ -1,4 +1,4 @@
-import { Component, computed, inject, ViewChild } from '@angular/core';
+import { Component, computed, inject, ViewChild, OnInit, AfterViewInit } from '@angular/core';
 import { LoginService } from '../login/login.service';
 import { MatStepper, MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
@@ -26,7 +26,7 @@ import { CurrencyPipe } from '@angular/common';
   templateUrl: './checkout.html',
   styleUrl: './checkout.scss',
 })
-export class Checkout {
+export class Checkout implements OnInit, AfterViewInit {
   private loginService = inject(LoginService);
   private orderService = inject(OrderService);
   private router = inject(Router);

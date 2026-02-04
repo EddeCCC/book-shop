@@ -1,7 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { BookService } from '../books.service';
-import { toSignal } from '@angular/core/rxjs-interop';
 import { Book } from '../../models/book';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
