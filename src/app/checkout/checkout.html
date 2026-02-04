@@ -3,7 +3,7 @@
         <mat-horizontal-stepper linear [orientation]="isMobile ? 'vertical' : 'horizontal'" #stepper>
             <mat-step label="Login">
                 @if (!isLoggedIn()) {
-                    <app-login [redirectAfterLogin]="false"></app-login>
+                    <app-login [redirectAfterLogin]="false" (loginSuccess)="onLoginSuccess()"></app-login>
                 } @else {
                     <div class="step-actions">
                         <button mat-raised-button matStepperNext color="accent">
@@ -47,6 +47,7 @@
                 <p><strong>Name:</strong> {{ username() }}</p>
                 <p><strong>Email:</strong> {{ email() }}</p>
                 <p><strong>Book:</strong> {{ bookTitle() }}</p>
+                <p><strong>Price:</strong> {{ bookPrice() | currency: 'EUR' }}</p>
                 <p><strong>Shipping to:</strong></p>
                 <p>
                     {{ shippingForm.value.address }}<br />

@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { OrderService } from '../orders/order.service';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-checkout',
@@ -19,6 +20,7 @@ import { OrderService } from '../orders/order.service';
     MatInputModule, 
     MatCardModule,
     ReactiveFormsModule,
+    CurrencyPipe,
     Login
   ],
   templateUrl: './checkout.html',
@@ -35,6 +37,7 @@ export class Checkout {
   email = computed(() => this.loginService.email());
   isLoggedIn = computed(() => this.loginService.isLoggedIn());
   bookTitle = computed(() => this.orderService.currentBookOrder()?.title);
+  bookPrice = computed(() => this.orderService.currentBookOrder()?.price);
   isInvalid = computed(() => this.isCheckoutInvalid());
 
   // Check if we need horizontal or vertical stepper
@@ -49,13 +52,19 @@ export class Checkout {
     if (!this.orderService.currentBookOrder()) {
       this.router.navigate(['/books']);
     }
+  }
 
+  ngAfterViewInit() {
     if (this.isLoggedIn()) {
-      Promise.resolve().then(() => {
-          this.stepper.next();
-      });
+      this.onLoginSuccess();
     }
   }
+
+  onLoginSuccess() {
+    setTimeout(() => {
+      this.stepper.selectedIndex = 1;
+    });
+}
 
   submitShipping() {
       this.orderService.setOrderLocation(this.shippingForm.value.address!, this.shippingForm.value.city!);

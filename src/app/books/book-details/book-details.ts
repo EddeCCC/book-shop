@@ -36,6 +36,6 @@ export class BookDetails {
   book$ = this.bookService.getBookById(this.bookId);
 
   onBuy(book: Book) {
-    this.orderService.setBookOrder(book.id, book.title);
+    this.orderService.setBookOrder(book.id, book.title, book.price);
   }
 }

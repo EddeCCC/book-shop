@@ -11,10 +11,11 @@ export class OrderService {
 
   orders = signal<Order[]>([]);
 
-  setBookOrder(bookId: string, title: string) {
+  setBookOrder(bookId: string, title: string, price: number) {
     this.currentBookOrder.set({
       bookId: bookId,
-      title: title
+      title: title,
+      price: price
     });
   }
 

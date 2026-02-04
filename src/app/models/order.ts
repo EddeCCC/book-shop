@@ -7,6 +7,7 @@ export interface Order {
 export interface BookOrder {
     bookId: string;
     title: string;
+    price: number;
 }
 
 export interface OrderLocation {

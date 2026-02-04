@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { LoginService } from './login.service';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -18,6 +18,7 @@ export class Login {
   private router = inject(Router);
 
   @Input() redirectAfterLogin = true;
+  @Output() loginSuccess = new EventEmitter<void>();
 
   loginForm = new FormGroup({
     firstName: new FormControl('', [Validators.required, Validators.minLength(2)]),
@@ -33,6 +34,7 @@ export class Login {
     }
 
     this.loginService.login(user);
+    this.loginSuccess.emit();
 
     if (this.redirectAfterLogin) this.router.navigate(["/"]);
   }
