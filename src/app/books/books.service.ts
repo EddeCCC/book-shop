@@ -12,7 +12,7 @@ export class BookService {
   private jsonUrl = "http://localhost:3000/books";
 
   getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(this.jsonUrl)
+    return this.http.get<any[]>(this.jsonUrl)
       .pipe(map((data) => data
             .filter((entry) => this.validateEntry(entry))
             .map((entry) => this.mapToBook(entry))
@@ -22,7 +22,7 @@ export class BookService {
 
   getBookById(id: number): Observable<Book | undefined> {
       const params = new HttpParams().set('id', id);
-      return this.http.get<Book[]>(this.jsonUrl, {params})
+      return this.http.get<any[]>(this.jsonUrl, {params})
         .pipe(map((data) => {
           const book = data[0];
           if(this.validateEntry(book)) 

@@ -1,38 +1,38 @@
-@if (book()) {
+<ng-container *ngIf="book$ | async as book; else emptyTemplate">
     <mat-card class="book-detail-card">
         <mat-card-header>
-            <mat-card-title>{{ book()?.title }}</mat-card-title>
-            <mat-card-subtitle>{{ book()?.subtitle }}</mat-card-subtitle>
+            <mat-card-title>{{ book.title }}</mat-card-title>
+            <mat-card-subtitle>{{ book?.subtitle }}</mat-card-subtitle>
         </mat-card-header>
 
         <mat-card-content class="book-content">
             <div class="authors">
                 <strong>Authors:  </strong>
-                @for (author of book()?.authors; track author) {
+                @for (author of book.authors; track author) {
                     <mat-chip>{{ author }}</mat-chip>
                 }
             </div>
 
             <div class="published-date">
-                <strong>Published:  </strong> {{ book()?.publishedDate }}
+                <strong>Published:  </strong> {{ book.publishedDate }}
             </div>
 
             <div class="categories">
                 <strong>Categories:  </strong>
-                @for (category of book()?.categories; track category) {
+                @for (category of book.categories; track category) {
                    <mat-chip>{{ category }}</mat-chip>
                 }
             </div>
 
-            <p class="description">{{ book()?.description }}</p>
+            <p class="description">{{ book.description }}</p>
 
             <div class="price">
-                <strong>Price:</strong> {{ book()?.price | currency: 'EUR' }}
+                <strong>Price:</strong> {{ book.price | currency: 'EUR' }}
             </div>
         </mat-card-content>
 
         <mat-card-actions>
-            <button mat-raised-button color="primary" [routerLink]="['/checkout']" (click)="onBuy()">
+            <button mat-raised-button color="primary" [routerLink]="['/checkout']" (click)="onBuy(book)">
                 Buy Now
             </button>
             <button mat-raised-button [routerLink]="['/books']">
@@ -40,11 +40,11 @@
             </button>
         </mat-card-actions>
     </mat-card>
-} @else {
+</ng-container>
+
+<ng-template #emptyTemplate>
      <mat-card class="error-card">
         <p>Sorry, we could not find any details about this book...</p>
         <button mat-button color="primary" class="error-button" [routerLink]="['/books']">Back to collection</button>
     </mat-card>
-}
-
-
+</ng-template>

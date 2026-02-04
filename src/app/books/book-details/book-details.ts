@@ -7,12 +7,13 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChip, MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
-import { CurrencyPipe } from '@angular/common';
+import { CommonModule, CurrencyPipe } from '@angular/common';
 import { OrderService } from '../../orders/order.service';
 
 @Component({
   selector: 'app-book-details',
   imports: [
+    CommonModule,
     MatCardModule,
     MatButtonModule,
     MatChipsModule,
@@ -31,9 +32,10 @@ export class BookDetails {
 
   bookId = this.route.snapshot.params['id'];
 
-  book = toSignal<Book | undefined>(this.bookService.getBookById(this.bookId), { initialValue: undefined });
+  //book = toSignal<Book | undefined>(this.bookService.getBookById(this.bookId), { initialValue: undefined });
+  book$ = this.bookService.getBookById(this.bookId);
 
-  onBuy() {
-    this.orderService.setBookOrder(this.book()!.id, this.book()!.title);
+  onBuy(book: Book) {
+    this.orderService.setBookOrder(book.id, book.title);
   }
 }
