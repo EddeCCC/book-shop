@@ -5,20 +5,19 @@ import { provideRouter } from '@angular/router';
 import { routes } from '../app.routes';
 import { LoginService } from '../login/login.service';
 
-describe('Home', () => {
+describe('Home Int', () => {
   let component: Home;
   let fixture: ComponentFixture<Home>;
   let loginService: LoginService;
+  const username = "Eddy";
 
   beforeEach(async () => {
-    const loginSpy = { isLoggedIn: vi.fn(), username: vi.fn() };
-
     await TestBed.configureTestingModule({
       imports: [Home],
       providers: [
         provideTranslateService(),
         provideRouter(routes),
-        { provide: LoginService, useValue: loginSpy }
+        LoginService
       ]
     })
     .compileComponents();
@@ -34,10 +33,9 @@ describe('Home', () => {
   });
 
   it('should check login', () => {
-    component.isLoggedIn();
-    component.username();
+    loginService.login({username: username, email: ''});
 
-    expect(loginService.isLoggedIn).toHaveBeenCalled();
-    expect(loginService.username).toHaveBeenCalled();
+    expect(component.isLoggedIn()).toBeTruthy();
+    expect(component.username()).toEqual(username);
   });
 });
