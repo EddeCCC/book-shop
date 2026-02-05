@@ -19,33 +19,39 @@ mat-horizontal-stepper {
 }
 
 mat-step {
-   padding-top: clamp(1rem, 2vw, 2rem);
+  padding-top: clamp(1rem, 2vw, 2rem);
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    margin-top: 16px;
+  }
+
+  p {
+    margin: 4px 0;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+  }
+
+  strong {
+    font-weight: 600;
+  }
 }
 
 mat-error {
   margin-top: -12px;
 }
 
-mat-step form {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(1rem, 2vw, 1.5rem);
-  margin-top: 16px;
-}
-
 mat-form-field {
   width: 100%;
   gap: 12px;
-}
-
-mat-step p {
-  margin: 4px 0;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  color: rgba(0, 0, 0, 0.75);
-}
-
-mat-step strong {
-  font-weight: 600;
 }
 
 .step-actions {
@@ -57,10 +63,4 @@ mat-step strong {
 
 .step-actions button {
   min-width: 160px;
-}
-
-mat-step h3 {
-  margin-top: 0;
-  margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
