@@ -16,7 +16,7 @@
             </mat-select>
         </mat-form-field>
         <span class="book-count">
-            {{ filteredCount() }} {{ 'books.filter.found' | translate }}
+            {{ 'books.filter.found' | translate: {count: filteredCount()} }}
         </span>
     </div>
     

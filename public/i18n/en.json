@@ -15,7 +15,7 @@
         "filter": {
             "categories": "Categories",
             "all": "All",
-            "found": "books have been found"
+            "found": "{{count}} books have been found"
         },
         "card": {
             "category": "Category",

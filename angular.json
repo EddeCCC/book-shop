@@ -83,6 +83,17 @@
               "src/**/*.html"
             ]
           }
+        },
+        "e2e": {
+          "builder": "playwright-ng-schematics:playwright",
+          "options": {
+            "devServerTarget": "bookly:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "bookly:serve:production"
+            }
+          }
         }
       }
     }
