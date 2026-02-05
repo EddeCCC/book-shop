@@ -35,6 +35,8 @@ export class Login {
   });
 
   submitLogin() {
+    if (this.loginForm.invalid) return;
+
     const user: User = {
       username: this.loginForm.value.firstName + ' ' + this.loginForm.value.lastName,
       email: this.loginForm.value.email!

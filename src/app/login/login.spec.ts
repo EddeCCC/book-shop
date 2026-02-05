@@ -1,10 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { Login } from './login';
 import { LoginService } from './login.service';
 import { Router } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-import { provideTranslateLoader, provideTranslateService, TranslateLoader, TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { provideTranslateService } from '@ngx-translate/core';
 
 describe('Login', () => {
   let component: Login;
@@ -24,7 +23,6 @@ describe('Login', () => {
 
     await TestBed.configureTestingModule({
       imports: [Login, ReactiveFormsModule],
-      declarations: [],
       providers: [
         provideTranslateService(),
         { provide: LoginService, useValue: loginSpy },
@@ -35,7 +33,6 @@ describe('Login', () => {
 
     fixture = TestBed.createComponent(Login);
     component = fixture.componentInstance;
-
     loginService = TestBed.inject(LoginService);
     router = TestBed.inject(Router);
 
@@ -46,21 +43,67 @@ describe('Login', () => {
     expect(component).toBeTruthy();
   });
 
-  it('form should be invalid when empty', () => {
+  it('form invalid when empty', () => {
     expect(component.loginForm.valid).toBeFalsy();
   });
 
-  it('should call login() and emit loginSuccess() on submit', () => {
+  it('form invalid when firstName invalid', () => {
+    component.loginForm.setValue({ ...formData, firstName: 'A' });
+
+    expect(component.loginForm.valid).toBeFalsy();
+  });
+
+  it('form invalid when lastName invalid', () => {
+    component.loginForm.setValue({ ...formData, lastName: 'A' });
+
+    expect(component.loginForm.valid).toBeFalsy();
+  });
+
+  it('form invalid when email invalid', () => {
+    component.loginForm.setValue({ ...formData, email: 'A' });
+
+    expect(component.loginForm.valid).toBeFalsy();
+  });
+
+  it('form valid with valid data', () => {
+    component.loginForm.setValue(formData);
+
+    expect(component.loginForm.valid).toBeTruthy();
+  });
+
+  it('should call login()', () => {
     component.loginForm.setValue(formData);
 
     component.submitLogin();
 
-    expect(loginService.login).toHaveBeenCalledTimes(1);
-    expect(router.navigate).toHaveBeenCalledTimes(1);
+    expect(loginService.login).toHaveBeenCalledOnce();
+  });
+
+  it('should not call login() when form invalid', () => {
+    component.submitLogin();
+
+    expect(loginService.login).not.toHaveBeenCalled();
+  });
+
+  it('should emit loginSuccess()', () =>  {
+    const emitSpy = vi.spyOn(component.loginSuccess, 'emit');
+
+    component.loginForm.setValue(formData);
+    component.submitLogin();
+
+    expect(emitSpy).toHaveBeenCalledOnce();
+  });
+
+  it('should navigate after login', () => {
+    component.loginForm.setValue(formData);
+
+    component.submitLogin();
+
+    expect(router.navigate).toHaveBeenCalledOnce();
     expect(router.navigate).toHaveBeenCalledWith(["/"]);
   });
 
-  it('should not navigate if redirectAfterLogin is false', () => {
+  it('should not navigate after login', () => {
     component.redirectAfterLogin = false;
     component.loginForm.setValue(formData);
 
