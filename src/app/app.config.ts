@@ -1,9 +1,8 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideTranslateService, provideTranslateLoader } from "@ngx-translate/core";
+import { provideTranslateService } from "@ngx-translate/core";
 import { provideTranslateHttpLoader } from "@ngx-translate/http-loader";
 import {provideHttpClient} from "@angular/common/http";
-
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
