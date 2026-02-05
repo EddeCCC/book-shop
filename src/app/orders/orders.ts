@@ -1,5 +1,5 @@
 import { Component, computed, inject } from '@angular/core';
-import { OrderService } from './order.service';
+import { OrderService } from './orders.service';
 import { MatCardModule } from '@angular/material/card';
 import { TranslatePipe } from '@ngx-translate/core';
 

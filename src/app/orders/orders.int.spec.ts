@@ -13,13 +13,11 @@ describe('Orders', () => {
   ];
 
   beforeEach(async () => {
-    const orderSpy = { orders: vi.fn(() => orders) };
-
     await TestBed.configureTestingModule({
       imports: [Orders],
       providers: [
         provideTranslateService(),
-        { provide: OrderService, useValue: orderSpy }
+        OrderService
       ]
     })
     .compileComponents();
@@ -35,7 +33,8 @@ describe('Orders', () => {
   });
 
   it('should compute finishedOrders from service', () => {
+    orderService.orders.set(orders);
+
     expect(component.finishedOrders()).toEqual(orders);
-    expect(orderService.orders).toHaveBeenCalled();
   });
 });

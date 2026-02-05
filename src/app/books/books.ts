@@ -8,7 +8,7 @@ import { CurrencyPipe } from '@angular/common';
 import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatOption, MatSelect } from '@angular/material/select';
 import { Book } from '../models/book';
-import { OrderService } from '../orders/order.service';
+import { OrderService } from '../orders/orders.service';
 import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({

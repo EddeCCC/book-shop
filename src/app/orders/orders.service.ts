@@ -27,6 +27,8 @@ export class OrderService {
   }
 
   finishOrder() {
+    if (!this.currentBookOrder() || !this.currentOrderLocation()) return;
+
     const order: Order = {
       id: this.currentOrderId,
       bookOrder: this.currentBookOrder()!,
