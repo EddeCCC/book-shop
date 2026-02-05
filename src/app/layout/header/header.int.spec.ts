@@ -1,27 +1,24 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Header } from './header';
 import { LoginService } from '../../login/login.service';
-import { Router } from '@angular/router';
-import { TranslateService, provideTranslateService } from '@ngx-translate/core';
+import { provideTranslateService, TranslateService } from '@ngx-translate/core';
 import { provideRouter } from '@angular/router';
 import { routes } from '../../app.routes';
 
-describe('Header', () => {
+describe('Header Integration', () => {
   let component: Header;
   let fixture: ComponentFixture<Header>;
   let loginService: LoginService;
-  let router: Router;
   let translate: TranslateService;
+  const username = "Eddy";
 
   beforeEach(async () => {
-    const loginSpy = { logout: vi.fn(), isLoggedIn: vi.fn(), username: vi.fn() }
-
     await TestBed.configureTestingModule({
       imports: [Header],
       providers: [
         provideTranslateService(),
         provideRouter(routes),
-        { provide: LoginService, useValue: loginSpy },
+        LoginService
       ]
     })
     .compileComponents();
@@ -29,11 +26,7 @@ describe('Header', () => {
     fixture = TestBed.createComponent(Header);
     component = fixture.componentInstance;
     loginService = TestBed.inject(LoginService);
-    router = TestBed.inject(Router);
     translate = TestBed.inject(TranslateService);
-
-    vi.spyOn(router, 'navigate');
-    vi.spyOn(translate, 'use');
 
     await fixture.whenStable();
   });
@@ -43,25 +36,25 @@ describe('Header', () => {
   });
 
   it('should check login data', () => {
-    component.isLoggedIn();
-    component.username();
+    loginService.login({username: username, email: ''});
 
-    expect(loginService.isLoggedIn).toHaveBeenCalled();
-    expect(loginService.username).toHaveBeenCalled();
+    expect(component.isLoggedIn()).toBeTruthy();
+    expect(component.username()).toEqual(username);
   });
 
-  it('should logout and navigate to home', () => {
+  it('should logout', () => {
+    loginService.login({username: username, email: ''});
+
     component.logout();
 
-    expect(loginService.logout).toHaveBeenCalledOnce();
-    expect(router.navigate).toHaveBeenCalledOnce();
-    expect(router.navigate).toHaveBeenCalledWith(['/']);
+    expect(loginService.isLoggedIn()).toBeFalsy();
+    expect(loginService.username()).toBeNull();
   });
 
   it('should change language', () => {
-    component.changeLanguage('de');
+    const lang = 'de';
+    component.changeLanguage(lang);
 
-    expect(translate.use).toHaveBeenCalledOnce();
-    expect(translate.use).toHaveBeenCalledWith('de');
+    expect(translate.getCurrentLang()).toEqual(lang);
   });
 });

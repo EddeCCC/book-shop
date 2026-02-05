@@ -3,7 +3,7 @@ import { Orders } from './orders';
 import { provideTranslateService } from '@ngx-translate/core';
 import { OrderService } from './orders.service';
 
-describe('Orders', () => {
+describe('Orders Integration', () => {
   let component: Orders;
   let fixture: ComponentFixture<Orders>;
   let orderService: OrderService;
