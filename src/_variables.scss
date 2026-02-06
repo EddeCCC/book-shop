@@ -1,0 +1,15 @@
+/**
+  < 576px -> mobile
+  < 768px -> tablets
+  < 992px -> small laptops
+  < 1200px -> large screens
+**/
+$mobile-size: 768px;
+
+/* Colors */
+$color-primary: #1d169b;
+$color-primary-dark: #453db7;
+$color-primary-light: white;
+$color-text: #111827;
+$color-error: #dc2626;
+$color-bg: #f9fafb;

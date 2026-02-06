@@ -1,17 +1,19 @@
+@use '../../variables' as v;
+
 .books-content {
-    padding: clamp(1rem, 3vw, 2rem);
+    padding: 1.5rem;
 }
 
 .filter-bar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: clamp(0.5rem, 2vw, 1rem);
+    gap: 1rem;
     margin-top: 0.5rem;
 }
 
 .book-count {
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.6);
     margin-top: -15px;
 }
@@ -19,7 +21,7 @@
 .book-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: clamp(0.5rem, 2vw, 1rem);
+    gap: 1rem;
     margin-top: 1rem;
     box-sizing: border-box;
 }
@@ -30,19 +32,18 @@ mat-card-header {
     flex-direction: column;
 }
 
-
 mat-card {
     height: 100%;
     display: flex;
     flex-direction: column;
     border-radius: 12px;
-    padding: clamp(0.5rem, 2vw, 1rem);
+    padding: 0.5rem;
 }
 
 .card-content {
     display: flex;
     align-items: flex-start;
-    gap: clamp(1rem, 2vw, 1.5rem);
+    gap: 1rem;
 }
 
 .book-image {
@@ -61,7 +62,7 @@ mat-card {
 
     p {
         margin: 4px 0;
-        font-size: clamp(0.85rem, 2vw, 1rem);
+        font-size: 0.8rem;
     }
 
     button {
@@ -81,11 +82,11 @@ mat-card {
 }
 
 .buy-button-inner {
-    background-color: var(--color-primary);
-    color: var(--color-primary-light);
+    background-color: v.$color-primary;
+    color: v.$color-primary-light;
 
     &:hover {
-        background-color: var(--color-primary-dark);
+        background-color: v.$color-primary-dark;
     }
 }
 

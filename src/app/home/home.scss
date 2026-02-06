@@ -1,3 +1,5 @@
+@use '../../variables' as v;
+
 .home-content {
   min-height: calc(100vh - 64px); // subtract header height
   display: flex;
@@ -6,28 +8,39 @@
   justify-content: center;
   text-align: center;
   padding: 1rem;
-  gap: clamp(0.75rem, 1vw, 1rem);
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: 3.5rem;
   font-weight: 700;
-  color: var(--color-text);
+  color: v.$color-text;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (max-width: v.$mobile-size)  {
+    font-size: 2rem;
+  }
 }
 
 h2 {
-  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-size: 2rem;
   margin-top: 0;
-  color: var(--color-text);
+  color:  v.$color-text;
+
+  @media (max-width: v.$mobile-size) {
+    font-size: 1.4rem;
+  }
 }
 
-.home-button {
+.show-button {
   min-width: 140px;
   padding: 0.75rem 1.5rem;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: 1.2rem;
   border-radius: 8px;
-  background-color: var(--color-primary);
-  color: var(--color-primary-light)
+  background-color:  v.$color-primary;
+  color: v.$color-primary-light;
+
+  @media (max-width: v.$mobile-size) {
+    font-size: 1rem;
+  }
 }

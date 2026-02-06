@@ -1,6 +1,8 @@
+@use '../../../variables' as v;
+
 .app-header {
-  background-color: var(--color-primary);
-  color: white;
+  background-color: v.$color-primary;
+  color: v.$color-primary-light;
   position: fixed;
   width: 100%;
   top: 0;
@@ -20,10 +22,10 @@
 .left-header {
   display: flex;
   align-items: center;
-  gap: clamp(0.75rem, 2vw, 1.5rem);
+  gap: 2rem;
 
   a {
-    color: var(--color-primary-light);
+    color: v.$color-primary-light;
     font-weight: 500;
     padding: 0.25rem 0;
   }
@@ -42,26 +44,20 @@
 
   .username {
     font-weight: 500;
-    color: var(--color-primary-light);
+    color: v.$color-primary-light;
   }
 }
 
 .language-button {
-  color: var(--color-primary-light);
+  color: v.$color-primary-light;
 }
 
 .menu-button {
   display: none;
-  color: var(--color-primary-light);
+  color: v.$color-primary-light;
 }
 
-/**
-  bis 576px  mobile
-  bis 768px -> tablets
-  bis 992px -> small laptops
-  bis 1200px -> large screens
-**/
-@media (max-width: 768px) {
+@media (max-width: v.$mobile-size) {
   .left-header a:not(.logo) {
     display: none;
   }
