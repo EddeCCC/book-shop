@@ -1,4 +1,4 @@
-import { Component, computed, inject, ViewChild, OnInit, AfterViewInit } from '@angular/core';
+import { Component, computed, inject, ViewChild, OnInit, AfterViewInit, signal } from '@angular/core';
 import { LoginService } from '../login/login.service';
 import { MatStepper, MatStepperModule } from '@angular/material/stepper';
 import { MatCardModule } from '@angular/material/card';
@@ -11,6 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { OrderService } from '../orders/orders.service';
 import { CurrencyPipe } from '@angular/common';
 import { TranslatePipe } from '@ngx-translate/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-checkout',
@@ -33,6 +35,7 @@ export class Checkout implements OnInit, AfterViewInit {
   private orderService = inject(OrderService);
   private router = inject(Router);
   private formBuilder = inject(FormBuilder);
+  private breakpointObserver = inject(BreakpointObserver);
   @ViewChild(MatStepper) private stepper!: MatStepper;
 
   username = computed(() => this.loginService.username());
@@ -43,12 +46,22 @@ export class Checkout implements OnInit, AfterViewInit {
   isInvalid = computed(() => this.isCheckoutInvalid());
 
   // Check if we need horizontal or vertical stepper
-  isMobile = window.innerWidth <= 768;
+  //isMobile = window.innerWidth <= 768;
+  isMobile = signal(false);
 
   shippingForm = this.formBuilder.group({
     address: ['', Validators.required],
     city: ['', Validators.required],
   });
+
+  constructor() {
+    this.breakpointObserver
+      .observe(Breakpoints.Handset)
+      .pipe(takeUntilDestroyed())
+      .subscribe(result => {
+        this.isMobile.set(result.matches);
+      });
+  }
 
   ngOnInit() {
     if (!this.orderService.currentBookOrder()) {

@@ -1,6 +1,6 @@
 <div class="container checkout-content">
     <mat-card class="checkout-card">
-        <mat-horizontal-stepper linear [orientation]="isMobile ? 'vertical' : 'horizontal'" #stepper>
+        <mat-horizontal-stepper linear [orientation]="isMobile() ? 'vertical' : 'horizontal'" #stepper>
             <mat-step label="{{ 'checkout.login.title' | translate }}">
                 @if (!isLoggedIn()) {
                     <app-login [redirectAfterLogin]="false" (loginSuccess)="onLoginSuccess()"></app-login>
