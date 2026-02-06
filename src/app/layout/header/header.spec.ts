@@ -14,7 +14,7 @@ describe('Header', () => {
   let translate: TranslateService;
 
   beforeEach(async () => {
-    const loginSpy = { logout: vi.fn(), isLoggedIn: vi.fn(), username: vi.fn() }
+    const loginSpy = { logout: vi.fn(), isLoggedIn: vi.fn(), username: vi.fn() };
 
     await TestBed.configureTestingModule({
       imports: [Header],

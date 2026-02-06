@@ -63,6 +63,7 @@ export class Checkout implements OnInit, AfterViewInit {
       });
   }
 
+  // Leave checkout, if ordered book is unknown
   ngOnInit() {
     if (!this.orderService.currentBookOrder()) {
       this.router.navigate(['/books']);
@@ -75,6 +76,7 @@ export class Checkout implements OnInit, AfterViewInit {
     }
   }
 
+  // Skip login, if already logged in
   onLoginSuccess() {
     setTimeout(() => {
       this.stepper.selectedIndex = 1;

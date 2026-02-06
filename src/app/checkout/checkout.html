@@ -6,7 +6,7 @@
                     <app-login [redirectAfterLogin]="false" (loginSuccess)="onLoginSuccess()"></app-login>
                 } @else {
                     <div class="step-actions">
-                        <button mat-raised-button matStepperNext color="accent">
+                        <button mat-raised-button matStepperNext color="accent" class="login-continue-button">
                             {{ 'checkout.continue' | translate }}
                         </button>         
                     </div>
@@ -36,7 +36,11 @@
                 </form> 
 
                 <div class="step-actions">
-                    <button mat-raised-button matStepperNext color="primary" [disabled]="shippingForm.invalid" (click)="submitShipping()">
+                    <button mat-raised-button matStepperNext 
+                        color="primary" 
+                        class="shipping-continue-button"
+                        [disabled]="shippingForm.invalid" 
+                        (click)="submitShipping()">
                         {{ 'checkout.continue' | translate }}
                     </button>
                 </div>
@@ -55,7 +59,11 @@
                 </p>
 
                 <div class="step-actions">
-                    <button mat-raised-button color="accent" (click)="finishCheckout()" [disabled]="isInvalid()">
+                    <button mat-raised-button 
+                        color="accent"
+                        class="finish-button" 
+                        (click)="finishCheckout()" 
+                        [disabled]="isInvalid()">
                         {{ 'checkout.summary.finish' | translate }}
                     </button>
                 </div>
