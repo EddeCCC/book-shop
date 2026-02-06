@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Login } from './login';
 import { LoginService } from './login.service';
-import { Router } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { provideTranslateService } from '@ngx-translate/core';
 
@@ -17,8 +16,6 @@ describe('Login Integration', () => {
     };
 
     beforeEach(async () => {
-        const routerSpy = { navigate: vi.fn() };
-
         await TestBed.configureTestingModule({
             imports: [Login, ReactiveFormsModule],
             providers: [

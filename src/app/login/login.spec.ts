@@ -4,6 +4,7 @@ import { LoginService } from './login.service';
 import { Router } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { provideTranslateService } from '@ngx-translate/core';
+import { By } from '@angular/platform-browser';
 
 describe('Login', () => {
   let component: Login;
@@ -110,5 +111,22 @@ describe('Login', () => {
     component.submitLogin();
 
     expect(router.navigate).not.toHaveBeenCalled();
+  });
+
+  it('should disable button when form invalid', () => {
+    const loginButton = fixture.debugElement.query(By.css('.login-button'));
+    const buttonDisabled = loginButton.nativeElement.disabled;
+
+    expect(buttonDisabled).toBeTruthy();
+  });
+
+  it('should enable button when form valid', () => {
+    component.loginForm.setValue(formData);
+    fixture.detectChanges();
+
+    const loginButton = fixture.debugElement.query(By.css('.login-button'));
+    const buttonDisabled = loginButton.nativeElement.disabled;
+
+    expect(buttonDisabled).toBeFalsy();
   });
 });
